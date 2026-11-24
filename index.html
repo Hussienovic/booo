@@ -1,19 +1,39 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Literature L1 Exam Kit</title>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+.btn,#nav button.on,ol.steps li::before,.bar i,.face.a{background:var(--grad)}
+.hero h1 .ln:nth-child(2) span{display:inline-block;padding-right:.06em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.seg button.on{background:var(--grad);color:var(--on-accent)}
+.seg button.done i::after{background:var(--accent)}
+.card,details.qa,details.plan,.opt{box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
+
+.aurora{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.aurora i{position:absolute;inset:-12%;background:
+  radial-gradient(60% 38% at 14% 6%,var(--au1),transparent 70%),
+  radial-gradient(55% 40% at 92% 18%,var(--au2),transparent 70%),
+  radial-gradient(60% 40% at 30% 96%,var(--au1),transparent 70%),
+  radial-gradient(50% 36% at 80% 72%,var(--au3),transparent 70%),
+  linear-gradient(180deg,var(--sky1),var(--sky2));animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(-2%,-1%,0) scale(1)}to{transform:translate3d(2%,2%,0) scale(1.07)}}
+.wrap{position:relative;z-index:1}
+</style></head><body>
+<title>Literature L1 Test Kit</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@400;500;600&family=Fraunces:ital,opsz,wght@1,9..144,500&family=JetBrains+Mono:wght@500&display=swap">
 <style>
 :root{
-  --bg:#0B0B0E;--surface:#141418;--surface2:#1D1D23;--ink:#F3F3F1;--muted:#9A9AA4;--line:#26262D;
-  --accent:#FF5A2B;--on-accent:#0B0B0E;--hi:#2A1812;--glass:rgba(11,11,14,.72);
-  --good:#62D69C;--goodbg:#10281C;--bad:#FF8C7C;--badbg:#321816;
+  --bg:#050922;--surface:rgba(14,21,48,.82);--surface2:#16204A;--ink:#EAF0FF;--muted:#9AA8D2;--line:#24305F;
+  --accent:#5CF0B5;--on-accent:#04122A;--hi:#0F2C3C;--glass:rgba(6,10,28,.74);
+  --grad:linear-gradient(120deg,#4EF0A4 0%,#27C7DD 38%,#6C8CFF 70%,#B27CFF 100%);
+  --au1:rgba(46,235,165,.40);--au2:rgba(86,120,255,.46);--au3:rgba(176,110,255,.34);--sky1:#050922;--sky2:#0A2B48;
+  --good:#62D69C;--goodbg:#0F2B27;--bad:#FF8C9C;--badbg:#341830;
   --display:'Inter Tight','Inter',system-ui,sans-serif;--body:'Inter',system-ui,-apple-system,sans-serif;
   --serif:'Fraunces',Georgia,serif;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
   --ease:cubic-bezier(.2,.7,.2,1);color-scheme:dark;
 }
 :root[data-theme="light"]{
-  --bg:#E8E9EC;--surface:#FFFFFF;--surface2:#F0F1F3;--ink:#101114;--muted:#5C5F67;--line:#D5D7DC;
-  --accent:#D93A0A;--on-accent:#FFFFFF;--hi:#FCE9E1;--glass:rgba(232,233,236,.78);
+  --bg:#DCE8FA;--surface:rgba(255,255,255,.82);--surface2:#EDF2FA;--ink:#0B1430;--muted:#55618A;--line:#D0DBEE;
+  --accent:#0A7A68;--on-accent:#FFFFFF;--hi:#E0F2EE;--glass:rgba(228,236,248,.8);
+  --grad:linear-gradient(120deg,#0B8F6B 0%,#127F9E 40%,#2F6FD0 72%,#7A4FD8 100%);
+  --au1:rgba(40,200,150,.34);--au2:rgba(90,130,255,.30);--au3:rgba(170,110,255,.24);--sky1:#DCE8FA;--sky2:#CFEFE8;
   --good:#146B3F;--goodbg:#DDF0E4;--bad:#A3271C;--badbg:#F8E3DF;color-scheme:light;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -124,13 +144,14 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
 </style>
 
 <script>document.documentElement.classList.add("js")</script>
+<div class="aurora" aria-hidden="true"><i></i></div>
 <div class="wrap">
 <header class="hero">
   <div class="meta"><span>Literary Texts · L1 · S1</span><button id="themeBtn" type="button" aria-label="Switch light or dark theme">Theme</button></div>
-  <h1><span class="ln"><span>Exam</span></span><span class="ln"><span>ready.</span></span></h1>
+  <h1><span class="ln"><span>Test</span></span><span class="ln"><span>ready.</span></span></h1>
   <div class="stage" aria-hidden="true"><div class="ring"><div class="face " style="--i:0"><b>01</b><span>Introduction to literature</span></div><div class="face a" style="--i:1"><b>02</b><span>Elements of fiction</span></div><div class="face w" style="--i:2"><b>03</b><span>The short story</span></div><div class="face " style="--i:3"><b>04</b><span>Figurative language</span></div><div class="face a" style="--i:4"><b>69</b><span>Quiz questions</span></div><div class="face w" style="--i:5"><b>1</b><span>Page cheat sheet</span></div></div></div>
   <p class="tag">Lessons, quizzes and model answers in one place.</p>
-  <p class="lead">A complete Semester 1 revision guide for Study of Literary Texts: four lessons with exam wording, a cheat sheet, a quiz with explanations, and written practice with model answers.</p>
+  <p class="lead">A complete Semester 1 revision guide for Study of Literary Texts: four lessons with test wording, a cheat sheet, a quiz with explanations, and written practice with model answers.</p>
   <div class="stats"><span>lessons read <b id="stRead">0/4</b></span><span>best quiz <b id="stBest">–</b></span></div>
 </header>
 
@@ -163,7 +184,7 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
   <article class="card">
     <h3>What is literature?</h3>
     <p>Literature is writing, or storytelling out loud, about being human: what people think, feel and live through. A shopping list is writing, but nobody studies it as literature. A poem about missing someone is literature, because it expresses a feeling.</p>
-    <p class="say"><span class="lbl">Say it in the exam</span>Literature is a collection of written or spoken works that express human thoughts, feelings, experiences and ideas, such as novels, poems, plays and essays. In the handout’s words: the written (and sometimes spoken) works produced as a form of expression.</p>
+    <p class="say"><span class="lbl">Say it in the test</span>Literature is a collection of written or spoken works that express human thoughts, feelings, experiences and ideas, such as novels, poems, plays and essays. In the handout’s words: the written (and sometimes spoken) works produced as a form of expression.</p>
   </article>
 
   <article class="card">
@@ -304,7 +325,7 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
   <article class="card">
     <h3>6. Theme <span class="qchip">What is the message?</span></h3>
     <p>Theme is the main idea or message of the story. Typical themes: love, friendship, courage, justice, hope, education.</p>
-    <p class="watch"><span class="lbl">Exam tip</span>Your handout treats a theme as the central idea or topic (love, friendship, courage) and also as the message the writer wants to convey. The safe answer does both: name the theme, then add one sentence of message, such as “Friendship: true friends stand by each other in hard times.”</p>
+    <p class="watch"><span class="lbl">Test tip</span>Your handout treats a theme as the central idea or topic (love, friendship, courage) and also as the message the writer wants to convey. The safe answer does both: name the theme, then add one sentence of message, such as “Friendship: true friends stand by each other in hard times.”</p>
   </article>
 
   <article class="card">
@@ -344,7 +365,7 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
   <article class="card">
     <h3>What is a short story?</h3>
     <p>A short story is a brief fictional narrative with a limited number of characters and a focused plot. The lesson’s example is “The Gift” by O. Henry (its full title is “The Gift of the Magi”).</p>
-    <p class="say"><span class="lbl">Say it in the exam</span>A short story is a brief fictional narrative with a limited number of characters and a focused plot.</p>
+    <p class="say"><span class="lbl">Say it in the test</span>A short story is a brief fictional narrative with a limited number of characters and a focused plot.</p>
   </article>
 
   <article class="card">
@@ -374,7 +395,7 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
 
   <article class="card">
     <h3>Analyzing a short story: use the six elements</h3>
-    <p>When the exam gives you a story, answer the six questions in this order. It is a ready-made structure for your answer.</p>
+    <p>When the test gives you a story, answer the six questions in this order. It is a ready-made structure for your answer.</p>
     <ol class="plain">
       <li><b>Characters:</b> who is the protagonist? Is anyone an antagonist? Who changes?</li>
       <li><b>Setting:</b> what time and what place?</li>
@@ -466,7 +487,7 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
       <tr><td>Simile</td><td>“He is strong as an ox.”</td></tr>
       <tr><td>Personification</td><td>“The sun stared at us.”</td></tr>
       <tr><td>Hyperbole</td><td>“I’m dying of thirst.” (not literal; shows how thirsty)</td></tr>
-      <tr><td>Understatement</td><td>“I think I did ok in the exam,” after getting the best mark. Often ironic, or used to soften a serious situation.</td></tr>
+      <tr><td>Understatement</td><td>“I think I did ok in the test,” after getting the best mark. Often ironic, or used to soften a serious situation.</td></tr>
       <tr><td>Oxymoron</td><td>“A silent scream.” Two opposites create a new meaning, such as silent suffering.</td></tr>
       <tr><td>Synecdoche</td><td>“Teaching young brains.” Brains stand for students, stressing intelligence.</td></tr>
     </table></div>
@@ -567,7 +588,7 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
   </article>
 
   <article class="card">
-    <h3>In the exam room</h3>
+    <h3>In the test</h3>
     <ul class="plain">
       <li>Use the lesson’s own wording for definitions.</li>
       <li>Shape every answer as term, definition, example.</li>
@@ -643,7 +664,7 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
       <tr><td>The old house groaned in the storm.</td><td><span class="rv">personification</span></td></tr>
       <tr><td>A cruel kindness.</td><td><span class="rv">oxymoron</span></td></tr>
       <tr><td>I have a ton of homework.</td><td><span class="rv">hyperbole</span></td></tr>
-      <tr><td>The exam was a bit tricky (it was extremely hard).</td><td><span class="rv">understatement</span></td></tr>
+      <tr><td>The test was a bit tricky (it was extremely hard).</td><td><span class="rv">understatement</span></td></tr>
       <tr><td>Everyone needs a roof over their head.</td><td><span class="rv">synecdoche (roof stands for house)</span></td></tr>
       <tr><td>Her voice was music to his ears.</td><td><span class="rv">metaphor</span></td></tr>
     </table></div>
