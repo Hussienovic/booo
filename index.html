@@ -1,0 +1,840 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Literature L1 Exam Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: phone-first study app. One column, four bottom tabs (Learn, Cheat sheet, Quiz, Write).
+   Navy ink on a cool lavender white, with a single pink accent that echoes the pink and navy of the lesson slides. */
+:root{
+  --bg:#F5F4FB; --surface:#FFFFFF; --surface2:#ECEAF7; --ink:#1B2150; --muted:#555A82; --line:#D9D6EC;
+  --accent:#B8235F; --on-accent:#FFFFFF; --hi:#FDEAF2;
+  --good:#176B43; --goodbg:#E2F3E9; --bad:#A8231A; --badbg:#FBE7E4;
+  --display:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#12152B; --surface:#1B2040; --surface2:#262C57; --ink:#ECEBFA; --muted:#A8ACCF; --line:#343B6E;
+    --accent:#FF7AAE; --on-accent:#2A0A19; --hi:#2D2250;
+    --good:#6FD9A4; --goodbg:#16352A; --bad:#FF9188; --badbg:#3D1B1E;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12152B; --surface:#1B2040; --surface2:#262C57; --ink:#ECEBFA; --muted:#A8ACCF; --line:#343B6E;
+  --accent:#FF7AAE; --on-accent:#2A0A19; --hi:#2D2250;
+  --good:#6FD9A4; --goodbg:#16352A; --bad:#FF9188; --badbg:#3D1B1E;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--body); font-size:16px; line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:20px 104px;
+}
+.wrap{max-width:720px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:2rem;font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.45rem;font-weight:700;margin-bottom:6px}
+h3{font-size:1.15rem;font-weight:700;margin-bottom:8px}
+p{margin:0 0 10px}
+.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--accent)}
+.lead{color:var(--muted);font-size:1.02rem}
+header{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+header p{margin:0;color:var(--muted)}
+.stack{display:flex;flex-direction:column;gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}
+.card>:last-child{margin-bottom:0}
+.say{background:var(--hi);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.say .lbl,.watch .lbl{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:3px}
+.watch{background:var(--surface2);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.watch .lbl{color:var(--muted)}
+ul.plain,ol.plain{margin:0 0 10px;padding-left:1.2rem}
+ul.plain li,ol.plain li{margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 10px}
+.grid.one{grid-template-columns:minmax(0,1fr)}
+.item{background:var(--surface2);border-radius:10px;padding:10px 12px;min-width:0}
+.item b{display:block;font-family:var(--display);font-size:1rem}
+.item span{color:var(--muted);font-size:.9rem}
+.qchip{display:inline-block;background:var(--accent);color:var(--on-accent);border-radius:999px;font-size:.74rem;font-weight:600;padding:2px 10px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+.scroll{overflow-x:auto;margin:0 0 10px}
+table.t{border-collapse:collapse;width:100%;min-width:300px;font-size:.93rem}
+table.t th,table.t td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+table.t th{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+table.t td:first-child{font-weight:600;width:34%}
+ol.steps{list-style:none;margin:0 0 10px;padding:0;counter-reset:s;display:flex;flex-direction:column;gap:8px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:start}
+ol.steps li::before{content:counter(s);width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:700;display:grid;place-items:center;font-family:var(--display)}
+ol.steps b{display:block}
+ol.steps span{color:var(--muted);font-size:.93rem}
+.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:0 0 14px}
+button{font:inherit;color:inherit;cursor:pointer}
+.seg button{border:1px solid var(--line);background:var(--surface);border-radius:10px;min-height:44px;font-weight:600;font-size:.9rem;padding:4px}
+.seg button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn{border:0;background:var(--accent);color:var(--on-accent);font-weight:600;border-radius:10px;min-height:46px;padding:10px 18px}
+.btn.ghost{background:var(--surface2);color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+#nav{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:2px;background:var(--surface);border-top:1px solid var(--line);
+  padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
+#nav button{flex:1;min-height:50px;border:0;background:transparent;border-radius:10px;font-weight:600;font-size:.82rem;color:var(--muted);position:relative}
+#nav button.on{color:var(--accent);background:var(--hi)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.rv{border-radius:4px}
+.recall .rv:not(.on){color:transparent;background:var(--line);cursor:pointer;user-select:none;-webkit-user-select:none}
+.recall .rv:not(.on) *{color:transparent}
+.bar{height:6px;background:var(--surface2);border-radius:999px;overflow:hidden;margin:6px 0 14px}
+.bar i{display:block;height:100%;background:var(--accent);width:0}
+.opt{display:block;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 8px;min-height:48px}
+.opt.right{background:var(--goodbg);border-color:var(--good)}
+.opt.wrong{background:var(--badbg);border-color:var(--bad)}
+.opt[disabled]{cursor:default}
+.fb{border-radius:10px;padding:12px 14px;margin:6px 0 12px}
+.fb.good{background:var(--goodbg)}
+.fb.bad{background:var(--badbg)}
+.fb b{display:block;margin-bottom:2px}
+.score{font-family:var(--display);font-size:2.6rem;font-weight:700;line-height:1}
+.miss{border-top:1px solid var(--line);padding:12px 0}
+.miss:first-of-type{border-top:0}
+.miss small{color:var(--muted)}
+details.qa{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 14px}
+details.qa summary{cursor:pointer;padding:13px 0;font-weight:600;list-style:none;display:flex;gap:10px;justify-content:space-between;align-items:flex-start}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::after{content:"+";color:var(--accent);font-weight:700;font-size:1.2rem;line-height:1}
+details.qa[open] summary::after{content:"–"}
+details.qa .ans{padding:0 0 14px}
+details.qa .ans p:last-child{margin-bottom:0}
+details.plan{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:0 16px;margin-bottom:14px}
+details.plan summary{cursor:pointer;padding:14px 0;font-weight:600;font-family:var(--display);font-size:1.05rem}
+details.plan[open] summary{padding-bottom:6px}
+details.plan ol{margin:0 0 14px;padding-left:1.2rem}
+details.plan li{margin-bottom:6px}
+.passage{background:var(--surface2);border-radius:10px;padding:12px 14px;font-style:italic;margin:0 0 12px}
+@media (max-width:420px){.grid{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">Study of Literary Texts (L1)</span>
+  <h1>Literature L1 Exam Kit</h1>
+  <p>Lessons 1 to 4: literature, elements of fiction, the short story, figurative language.</p>
+</header>
+
+<details class="plan" open>
+  <summary>Tonight’s plan</summary>
+  <ol>
+    <li><b>Learn</b> (about 40 min). Read one lesson, then take that lesson’s quiz straight away.</li>
+    <li><b>Quiz</b> (20 min). Run the mixed quiz until you score 85% or more.</li>
+    <li><b>Write</b> (30 min). Answer each question on paper first, then open the model answer.</li>
+    <li><b>Cheat sheet</b> (10 min) in test mode, then sleep. Sleep is part of revising.</li>
+  </ol>
+</details>
+
+<!-- ============ LEARN ============ -->
+<main id="tab-learn">
+<div class="seg" id="lessonSeg" role="tablist" aria-label="Lessons">
+  <button data-l="1" class="on">Lesson 1</button>
+  <button data-l="2">Lesson 2</button>
+  <button data-l="3">Lesson 3</button>
+  <button data-l="4">Lesson 4</button>
+</div>
+
+<!-- Lesson 1 -->
+<section class="pane stack" data-pane="1">
+  <div>
+    <h2>Lesson 1: Introduction to Literature</h2>
+    <p class="lead">Five questions run through this lesson: what literature is, what it is for, why it matters, what shapes it, and what kinds exist. Answer those five and you know the lesson.</p>
+  </div>
+
+  <article class="card">
+    <h3>What is literature?</h3>
+    <p>Literature is writing, or storytelling out loud, about being human: what people think, feel and live through. A shopping list is writing, but nobody studies it as literature. A poem about missing someone is literature, because it expresses a feeling.</p>
+    <p class="say"><span class="lbl">Say it in the exam</span>Literature is a collection of written or spoken works that express human thoughts, feelings, experiences and ideas, such as novels, poems, plays and essays.</p>
+  </article>
+
+  <article class="card">
+    <h3>What is it for? The six purposes</h3>
+    <div class="grid">
+      <div class="item"><b>Entertain</b><span>gives enjoyment</span></div>
+      <div class="item"><b>Educate</b><span>teaches knowledge and lessons</span></div>
+      <div class="item"><b>Express feelings</b><span>puts emotions into words</span></div>
+      <div class="item"><b>Criticize society</b><span>points at social problems</span></div>
+      <div class="item"><b>Preserve culture</b><span>keeps traditions and stories alive</span></div>
+      <div class="item"><b>Develop imagination</b><span>lets readers picture new worlds</span></div>
+    </div>
+    <p class="watch"><span class="lbl">Memory trick</span>Split them 3 and 3. For the reader’s mind: entertain, educate, develop imagination. For feelings and society: express feelings, criticize society, preserve culture.</p>
+  </article>
+
+  <article class="card">
+    <h3>Why does it matter? The four reasons</h3>
+    <ul class="plain">
+      <li>It improves language skills.</li>
+      <li>It develops critical thinking.</li>
+      <li>It teaches us about different cultures.</li>
+      <li>It helps us understand human emotions.</li>
+    </ul>
+    <p class="watch"><span class="lbl">Memory trick</span>Language, thinking, cultures, emotions.</p>
+  </article>
+
+  <article class="card">
+    <h3>What shapes literature? The six influences</h3>
+    <p>Writers do not write in an empty room. What is around them ends up on the page.</p>
+    <div class="scroll"><table class="t">
+      <tr><th>Influence</th><th>What it means / quick example</th></tr>
+      <tr><td>Culture</td><td>Traditions and customs. A folktale that carries a community’s customs.</td></tr>
+      <tr><td>Religion</td><td>Beliefs and values. A story built on a moral belief.</td></tr>
+      <tr><td>History</td><td>Events. A novel set during a war.</td></tr>
+      <tr><td>Society</td><td>People and social problems. A story about poverty or inequality.</td></tr>
+      <tr><td>Politics</td><td>Power and laws. A novel about a government that controls its people.</td></tr>
+      <tr><td>Personal experiences</td><td>The writer’s own life. A poem about losing someone.</td></tr>
+    </table></div>
+  </article>
+
+  <article class="card">
+    <h3>Forms and genres <span class="qchip">the part students mix up</span></h3>
+    <p>Two separate questions sort every text. Keep them apart and the lesson becomes easy.</p>
+    <div class="grid one">
+      <div class="item"><b>Question 1: is it real or imagined?</b><span>Fiction: imaginary characters and events (novel, short story, fairy tale). Nonfiction: real people, facts and events (biography, memoir, essay).</span></div>
+      <div class="item"><b>Question 2: how is it written?</b><span>Prose: ordinary sentences and paragraphs. Verse: poetic lines, often with rhythm and rhyme. Drama: written to be performed.</span></div>
+    </div>
+    <div class="scroll"><table class="t">
+      <tr><th>Form</th><th>Examples</th></tr>
+      <tr><td>Prose</td><td>Novel, short story, essay, biography, autobiography</td></tr>
+      <tr><td>Verse</td><td>Sonnet, ballad, free verse, lyric poetry</td></tr>
+      <tr><td>Drama</td><td>Tragedy, comedy, tragicomedy</td></tr>
+    </table></div>
+    <p class="watch"><span class="lbl">Watch out</span>One text answers both questions. A novel is fiction (imagined) and prose (sentences). An essay is nonfiction and prose. A tragedy is drama. If you only answer one question, you lose marks.</p>
+  </article>
+</section>
+
+<!-- Lesson 2 -->
+<section class="pane stack" data-pane="2" hidden>
+  <div>
+    <h2>Lesson 2: Elements of Fiction</h2>
+    <p class="lead">Picture a film. Characters are the cast. Setting is the location. Conflict is what goes wrong. Plot is the scenes in order. Point of view is whose eyes you watch through. Theme is what you remember afterwards. Those are the six elements.</p>
+  </div>
+
+  <article class="card">
+    <h3>1. Characters <span class="qchip">Who?</span></h3>
+    <p>Characters are the people, animals or imaginary beings who take part in the story. Every character can be described by three separate questions:</p>
+    <div class="grid one">
+      <div class="item"><b>How important are they?</b><span>Main character (the most important) or minor character (a smaller role).</span></div>
+      <div class="item"><b>What role do they play?</b><span>Protagonist (the hero) or antagonist (the opponent).</span></div>
+      <div class="item"><b>Do they change?</b><span>Dynamic (changes) or static (stays the same).</span></div>
+    </div>
+    <p>Example: Cinderella is a main character and the protagonist. Her stepmother is the antagonist, and she stays cruel all the way through, so she is static. Scrooge in <i>A Christmas Carol</i> starts mean and ends generous, so he is dynamic.</p>
+    <p class="watch"><span class="lbl">Watch out</span>One character can carry a label from each question. The labels do not compete, because each answers a different question.</p>
+  </article>
+
+  <article class="card">
+    <h3>2. Setting <span class="qchip">When and where?</span></h3>
+    <p>Setting is the time and place of the story.</p>
+    <ul class="plain">
+      <li><b>Time:</b> past, present or future.</li>
+      <li><b>Place:</b> village, city, forest and so on.</li>
+    </ul>
+    <p>“A small village long ago” is a complete setting. Setting also creates a mood: a dark forest at night feels scary before anything happens.</p>
+  </article>
+
+  <article class="card">
+    <h3>3. Conflict <span class="qchip">What is the problem?</span></h3>
+    <p>Conflict is the main problem or struggle in the story. No problem, no story. To name it, ask: who or what is the character fighting?</p>
+    <div class="scroll"><table class="t">
+      <tr><th>Type</th><th>Fighting…</th><th>Example</th></tr>
+      <tr><td>Internal</td><td>themselves</td><td>A boy cannot decide whether to confess a lie.</td></tr>
+      <tr><td>Character vs character</td><td>another person</td><td>Hero against villain.</td></tr>
+      <tr><td>Character vs society</td><td>rules or the group</td><td>A girl fights an unfair law.</td></tr>
+      <tr><td>Character vs nature</td><td>the natural world</td><td>A hiker survives a blizzard.</td></tr>
+      <tr><td>Character vs technology</td><td>machines</td><td>A crew against a runaway computer.</td></tr>
+    </table></div>
+    <p>Internal means inside the character. The other four are external, which means the problem comes from outside.</p>
+  </article>
+
+  <article class="card">
+    <h3>4. Plot <span class="qchip">What happens?</span></h3>
+    <p>Plot is the sequence of events. It always moves through five stages. Here they are with one story: a girl, Lina, finds a lost wallet and returns it.</p>
+    <ol class="steps">
+      <li><div><b>Exposition: the introduction</b><span>We meet Lina and see her ordinary day. She finds a wallet.</span></div></li>
+      <li><div><b>Rising action: the problems grow</b><span>The wallet is full of money. She is tempted to keep it.</span></div></li>
+      <li><div><b>Climax: the turning point</b><span>She decides to return it. The story turns here.</span></div></li>
+      <li><div><b>Falling action: the problem is solved</b><span>She finds the owner and gives it back.</span></div></li>
+      <li><div><b>Resolution: the ending</b><span>The owner thanks her. The story ends happily.</span></div></li>
+    </ol>
+    <p class="watch"><span class="lbl">Watch out</span>Conflict is the problem. Plot is everything that happens because of it. Also, climax is the peak or turning point, while resolution is the ending. They are not the same stage.</p>
+    <p class="say"><span class="lbl">Memory trick</span>Exposition, Rising, Climax, Falling, Resolution: Every Rabbit Can Fly Rockets.</p>
+  </article>
+
+  <article class="card">
+    <h3>5. Point of view <span class="qchip">Who tells the story?</span></h3>
+    <p>Point of view is the perspective the story is told from. Look at the pronouns in the first lines.</p>
+    <div class="grid one">
+      <div class="item"><b>First person: “I”</b><span>The narrator is inside the story. “I opened the door.”</span></div>
+      <div class="item"><b>Second person: “you”</b><span>The story speaks to the reader. “You open the door.”</span></div>
+      <div class="item"><b>Third person: “he / she / they”</b><span>An outside narrator. “She went to school.”</span></div>
+    </div>
+    <p>Third person comes in two kinds. <b>Limited:</b> the narrator knows the thoughts of one character only. <b>Omniscient:</b> the narrator is all-knowing and can enter every character’s mind.</p>
+  </article>
+
+  <article class="card">
+    <h3>6. Theme <span class="qchip">What is the message?</span></h3>
+    <p>Theme is the main idea or message of the story. Typical themes: love, friendship, courage, justice, hope, education.</p>
+    <p class="watch"><span class="lbl">Watch out</span>Those one-word themes are topics. A topic is “friendship”. A theme is a message about it: “True friends stand by each other in hard times.” In an exam, write the theme as a full sentence.</p>
+  </article>
+
+  <article class="card">
+    <h3>The six questions, in one table</h3>
+    <div class="scroll"><table class="t">
+      <tr><th>Element</th><th>Key question</th></tr>
+      <tr><td>Characters</td><td>Who?</td></tr>
+      <tr><td>Setting</td><td>When and where?</td></tr>
+      <tr><td>Conflict</td><td>What is the problem?</td></tr>
+      <tr><td>Plot</td><td>What happens?</td></tr>
+      <tr><td>Point of view</td><td>Who tells the story?</td></tr>
+      <tr><td>Theme</td><td>What is the message?</td></tr>
+    </table></div>
+    <p class="say"><span class="lbl">Memory trick</span>Can Some Cats Please Play Together: Characters, Setting, Conflict, Plot, Point of view, Theme.</p>
+  </article>
+</section>
+
+<!-- Lesson 3 -->
+<section class="pane stack" data-pane="3" hidden>
+  <div>
+    <h2>Lesson 3: The Short Story</h2>
+    <p class="lead">Nothing new to memorize here. This lesson takes the six elements from Lesson 2 and applies them to one kind of text.</p>
+  </div>
+
+  <article class="card">
+    <h3>What is a short story?</h3>
+    <p>A short story is a brief fictional narrative with a limited number of characters and a focused plot. The lesson’s example is “The Gift” by O. Henry (its full title is “The Gift of the Magi”).</p>
+    <p class="say"><span class="lbl">Say it in the exam</span>A short story is a brief fictional narrative with a limited number of characters and a focused plot.</p>
+  </article>
+
+  <article class="card">
+    <h3>Five characteristics</h3>
+    <ul class="plain">
+      <li>Short length.</li>
+      <li>Few characters.</li>
+      <li>One central conflict.</li>
+      <li>Focused on one theme.</li>
+      <li>A surprising or satisfying ending.</li>
+    </ul>
+    <p>That is why it is “short but powerful”: with one conflict and one theme, every detail has a job.</p>
+  </article>
+
+  <article class="card">
+    <h3>Five types</h3>
+    <div class="scroll"><table class="t">
+      <tr><th>Type</th><th>It is about</th></tr>
+      <tr><td>Fictional</td><td>Imaginary events</td></tr>
+      <tr><td>Realistic</td><td>Everyday life</td></tr>
+      <tr><td>Fantastic</td><td>The supernatural or magical</td></tr>
+      <tr><td>Detective</td><td>Mystery and crime</td></tr>
+      <tr><td>Satirical</td><td>Humor that is also critical</td></tr>
+    </table></div>
+    <p>Quick match: ghosts and magic = fantastic. A crime to solve = detective. Ordinary life = realistic. Funny but criticizing society = satirical.</p>
+  </article>
+
+  <article class="card">
+    <h3>Analyzing a short story: use the six elements</h3>
+    <p>When the exam gives you a story, answer the six questions in this order. It is a ready-made structure for your answer.</p>
+    <ol class="plain">
+      <li><b>Characters:</b> who is the protagonist? Is anyone an antagonist? Who changes?</li>
+      <li><b>Setting:</b> what time and what place?</li>
+      <li><b>Conflict:</b> internal or external? Which type?</li>
+      <li><b>Plot:</b> name the five stages with one event each.</li>
+      <li><b>Point of view:</b> first, second or third person? Limited or omniscient?</li>
+      <li><b>Theme:</b> the message, written as a sentence.</li>
+    </ol>
+    <p class="watch"><span class="lbl">Practice</span>The Write tab has a short story with a full model analysis. Try it on paper before you open the answer.</p>
+  </article>
+
+  <article class="card">
+    <h3>Plot and point of view, from the slide</h3>
+    <p>The five plot stages are the same as in Lesson 2. The lesson’s example: a girl finds a lost wallet and returns it, and the story ends happily. For point of view, the lesson’s example is “She went to school,” which is third person.</p>
+  </article>
+</section>
+
+<!-- Lesson 4 -->
+<section class="pane stack" data-pane="4" hidden>
+  <div>
+    <h2>Lesson 4: Introduction to Figurative Language</h2>
+    <p class="lead">Figurative language is expressive, imaginative language that creates vivid pictures and emphasizes an idea. “Her smile was sunshine” does not mean a real sun. It paints a picture of a bright, warm smile. There are seven figures to know.</p>
+  </div>
+
+  <article class="card">
+    <h3>Metaphor <span class="qchip">A is B</span></h3>
+    <p>A direct comparison without “like” or “as”. “Time is a thief.” Time is compared to a thief.</p>
+    <p class="watch"><span class="lbl">Test</span>Does it say one thing is another thing? Then it is a metaphor.</p>
+  </article>
+
+  <article class="card">
+    <h3>Simile <span class="qchip">like / as</span></h3>
+    <p>A comparison using “like” or “as”. “She is as kind as an angel.”</p>
+    <p class="watch"><span class="lbl">Test</span>Look for the words like or as.</p>
+  </article>
+
+  <article class="card">
+    <h3>Personification <span class="qchip">things act like people</span></h3>
+    <p>Giving human qualities to non-human things. “The wind whispered.” Only people whisper.</p>
+    <p class="watch"><span class="lbl">Test</span>Is a non-human thing doing something only a person can do?</p>
+  </article>
+
+  <article class="card">
+    <h3>Oxymoron <span class="qchip">opposites together</span></h3>
+    <p>A combination of contradictory terms. “Bitter sweet”: sweet and bitter together. Another one: “deafening silence”.</p>
+    <p class="watch"><span class="lbl">Test</span>Two opposite words sitting side by side.</p>
+  </article>
+
+  <article class="card">
+    <h3>Hyperbole <span class="qchip">bigger</span></h3>
+    <p>An extreme exaggeration for emphasis. “I’ve told you a million times!” It is an exaggeration, not a real number.</p>
+    <p class="watch"><span class="lbl">Test</span>Is something blown up far beyond the truth?</p>
+  </article>
+
+  <article class="card">
+    <h3>Understatement <span class="qchip">smaller</span></h3>
+    <p>A deliberate understatement for effect. “It’s just a little problem,” said when the problem is actually big.</p>
+    <p class="watch"><span class="lbl">Test</span>Is something made to sound much smaller than it really is, on purpose?</p>
+  </article>
+
+  <article class="card">
+    <h3>Synecdoche <span class="qchip">part for whole</span></h3>
+    <p>Using a part to represent the whole, or the whole to represent a part. “All hands on deck!” means all people. “A hundred sails” means a hundred ships.</p>
+    <p class="watch"><span class="lbl">Test</span>Is a small piece standing in for the whole thing?</p>
+  </article>
+
+  <article class="card">
+    <h3>Which one is it? Ask in this order</h3>
+    <ol class="plain">
+      <li>Compares two things with like or as? <b>Simile.</b> Says one thing is another, no like or as? <b>Metaphor.</b></li>
+      <li>A non-human thing acts or feels like a person? <b>Personification.</b></li>
+      <li>Number or size blown up? <b>Hyperbole.</b> Shrunk on purpose? <b>Understatement.</b></li>
+      <li>Two opposite words side by side? <b>Oxymoron.</b></li>
+      <li>A part stands for the whole (or the reverse)? <b>Synecdoche.</b></li>
+    </ol>
+    <p class="watch"><span class="lbl">Watch out</span>Metaphor says A <i>is</i> B, two different things. Synecdoche uses a piece of the same thing (sails are part of a ship). Hyperbole and understatement are opposites. If two labels seem to fit, choose the one the lesson uses: “Time is a thief” is a metaphor.</p>
+  </article>
+
+  <article class="card">
+    <h3>Interpreting a figure in context</h3>
+    <p>The lesson’s skill is explaining what a figure means in the text. Use four steps: quote it, name it, say what it really means, say its effect.</p>
+    <p class="say"><span class="lbl">Model answer</span>“Time is a thief” is a metaphor. Time is compared directly to a thief, without like or as. Time is not a person, but it takes moments from our lives without us noticing. This makes the idea vivid and a little sad.</p>
+  </article>
+</section>
+</main>
+
+<!-- ============ CHEAT SHEET ============ -->
+<main id="tab-sheet" class="stack" hidden>
+  <div>
+    <h2>Cheat sheet</h2>
+    <p class="lead">Everything from the four lessons on one page. Switch on test mode to hide the answers, then tap a grey block to check yourself.</p>
+  </div>
+  <div class="row"><button class="btn ghost" id="recallBtn" aria-pressed="false">Test myself: hide answers</button></div>
+
+  <div id="sheetBody" class="stack">
+  <article class="card">
+    <h3>Lesson 1: Literature</h3>
+    <div class="scroll"><table class="t">
+      <tr><th>Ask</th><th>Answer</th></tr>
+      <tr><td>Literature is…</td><td><span class="rv">written or spoken works that express human thoughts, feelings, experiences and ideas</span></td></tr>
+      <tr><td>6 purposes</td><td><span class="rv">entertain, educate, express feelings, criticize society, preserve culture, develop imagination</span></td></tr>
+      <tr><td>4 reasons it matters</td><td><span class="rv">improves language skills, develops critical thinking, teaches about cultures, helps understand human emotions</span></td></tr>
+      <tr><td>6 influences</td><td><span class="rv">culture, religion, history, society, politics, personal experiences</span></td></tr>
+      <tr><td>Fiction / nonfiction</td><td><span class="rv">imaginary characters and events / real people, facts and events</span></td></tr>
+      <tr><td>Prose</td><td><span class="rv">ordinary sentences and paragraphs: novel, short story, essay, biography, autobiography</span></td></tr>
+      <tr><td>Verse</td><td><span class="rv">poetic lines, rhythm and rhyme: sonnet, ballad, free verse, lyric poetry</span></td></tr>
+      <tr><td>Drama</td><td><span class="rv">written to be performed: tragedy, comedy, tragicomedy</span></td></tr>
+    </table></div>
+  </article>
+
+  <article class="card">
+    <h3>Lesson 2: Elements of fiction</h3>
+    <div class="scroll"><table class="t">
+      <tr><th>Element</th><th>Answer</th></tr>
+      <tr><td>Characters (Who?)</td><td><span class="rv">main, minor · protagonist (hero), antagonist (opponent) · dynamic (changes), static (stays the same)</span></td></tr>
+      <tr><td>Setting (When and where?)</td><td><span class="rv">time: past, present, future · place: village, city, forest</span></td></tr>
+      <tr><td>Conflict (What is the problem?)</td><td><span class="rv">internal; external: vs character, vs society, vs nature, vs technology</span></td></tr>
+      <tr><td>Plot (What happens?)</td><td><span class="rv">exposition, rising action, climax, falling action, resolution</span></td></tr>
+      <tr><td>Point of view (Who tells it?)</td><td><span class="rv">first “I”, second “you”, third “he/she” (limited or omniscient)</span></td></tr>
+      <tr><td>Theme (What is the message?)</td><td><span class="rv">the main idea or message: love, friendship, courage, justice, hope, education</span></td></tr>
+    </table></div>
+  </article>
+
+  <article class="card">
+    <h3>Lesson 3: Short story</h3>
+    <div class="scroll"><table class="t">
+      <tr><th>Ask</th><th>Answer</th></tr>
+      <tr><td>Definition</td><td><span class="rv">a brief fictional narrative with a limited number of characters and a focused plot</span></td></tr>
+      <tr><td>5 characteristics</td><td><span class="rv">short length, few characters, one central conflict, one theme, surprising or satisfying ending</span></td></tr>
+      <tr><td>5 types</td><td><span class="rv">fictional (imaginary), realistic (everyday life), fantastic (supernatural), detective (mystery and crime), satirical (humorous and critical)</span></td></tr>
+      <tr><td>Elements</td><td><span class="rv">the same six as Lesson 2</span></td></tr>
+      <tr><td>Example</td><td><span class="rv">“The Gift” by O. Henry</span></td></tr>
+    </table></div>
+  </article>
+
+  <article class="card">
+    <h3>Lesson 4: Figurative language</h3>
+    <div class="scroll"><table class="t">
+      <tr><th>Figure</th><th>Rule and example</th></tr>
+      <tr><td>Figurative language</td><td><span class="rv">expressive, imaginative language for vivid pictures and emphasis</span></td></tr>
+      <tr><td>Metaphor</td><td><span class="rv">direct comparison, no like or as: “Time is a thief.”</span></td></tr>
+      <tr><td>Simile</td><td><span class="rv">comparison with like or as: “She is as kind as an angel.”</span></td></tr>
+      <tr><td>Personification</td><td><span class="rv">human qualities for non-human things: “The wind whispered.”</span></td></tr>
+      <tr><td>Oxymoron</td><td><span class="rv">contradictory terms together: “Bitter sweet.”</span></td></tr>
+      <tr><td>Hyperbole</td><td><span class="rv">extreme exaggeration: “I’ve told you a million times!”</span></td></tr>
+      <tr><td>Understatement</td><td><span class="rv">deliberately says less: “It’s just a little problem.”</span></td></tr>
+      <tr><td>Synecdoche</td><td><span class="rv">part for whole or whole for part: “All hands on deck!”, “a hundred sails”</span></td></tr>
+    </table></div>
+  </article>
+  </div>
+
+  <article class="card">
+    <h3>Pairs that get mixed up</h3>
+    <div class="scroll"><table class="t">
+      <tr><th>Pair</th><th>The difference</th></tr>
+      <tr><td>Fiction vs prose</td><td>Fiction is about content (imagined or real). Prose is about form (sentences). A novel is both.</td></tr>
+      <tr><td>Main vs protagonist vs dynamic</td><td>Importance, role and change. Three different questions.</td></tr>
+      <tr><td>Conflict vs plot</td><td>Conflict is the problem. Plot is the events in order.</td></tr>
+      <tr><td>Climax vs resolution</td><td>Climax is the turning point. Resolution is the ending.</td></tr>
+      <tr><td>Topic vs theme</td><td>Topic is a word (friendship). Theme is a message about it.</td></tr>
+      <tr><td>Limited vs omniscient</td><td>Limited knows one mind. Omniscient knows all minds.</td></tr>
+      <tr><td>Metaphor vs simile</td><td>Same idea. Simile uses like or as.</td></tr>
+      <tr><td>Hyperbole vs understatement</td><td>Bigger than the truth vs smaller than the truth.</td></tr>
+      <tr><td>Metaphor vs synecdoche</td><td>Comparing two things vs a part standing for its whole.</td></tr>
+    </table></div>
+  </article>
+
+  <article class="card">
+    <h3>Memory tricks</h3>
+    <ul class="plain">
+      <li><b>Six elements:</b> Can Some Cats Please Play Together (Characters, Setting, Conflict, Plot, Point of view, Theme).</li>
+      <li><b>Plot stages:</b> Every Rabbit Can Fly Rockets (Exposition, Rising, Climax, Falling, Resolution).</li>
+      <li><b>Key questions:</b> Who? When and where? What is the problem? What happens? Who tells it? What is the message?</li>
+      <li><b>Importance of literature:</b> language, thinking, cultures, emotions.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>In the exam room</h3>
+    <ul class="plain">
+      <li>Use the lesson’s wording for definitions. Your teacher marks against it.</li>
+      <li>Shape every answer as term, definition, example.</li>
+      <li>For a figure of speech: name it, quote the clue, explain the meaning.</li>
+      <li>For a story: answer the six questions in order.</li>
+      <li>Underline the command word in each question: define, explain, compare, identify.</li>
+      <li>Blank on an element? Write its key question, and the answer usually follows.</li>
+    </ul>
+  </article>
+</main>
+
+<!-- ============ QUIZ ============ -->
+<main id="tab-quiz" class="stack" hidden>
+  <div id="quizBox"></div>
+</main>
+
+<!-- ============ WRITE ============ -->
+<main id="tab-write" class="stack" hidden>
+  <div>
+    <h2>Written practice</h2>
+    <p class="lead">Answer on paper first, in full sentences. Then open the model answer and compare. Every model follows the same shape: term, definition, example.</p>
+  </div>
+
+  <details class="qa"><summary>1. Define literature and give three of its purposes.</summary><div class="ans">
+    <p>Literature is a collection of written or spoken works that express human thoughts, feelings, experiences and ideas. Examples are novels, poems, plays and essays.</p>
+    <p>It serves several purposes. It entertains readers, it educates them, and it lets people express feelings. It can also criticize society, preserve culture and develop imagination.</p>
+  </div></details>
+
+  <details class="qa"><summary>2. What is the difference between fiction and nonfiction? Between prose, verse and drama?</summary><div class="ans">
+    <p>Fiction is based on imaginary characters and events, for example a novel, a short story or a fairy tale. Nonfiction is based on real people, facts and events, for example a biography, a memoir or an essay.</p>
+    <p>Prose is ordinary writing in sentences and paragraphs. Verse is writing in poetic lines, often with rhythm and rhyme, such as a sonnet or a ballad. Drama is a literary work written to be performed, such as a tragedy or a comedy.</p>
+    <p>The two pairs answer different questions, so one text can belong to both. A novel is fiction and prose.</p>
+  </div></details>
+
+  <details class="qa"><summary>3. Name and explain the six elements of fiction.</summary><div class="ans">
+    <p><b>Characters</b> are the people, animals or imaginary beings who take part in the story. <b>Setting</b> is the time and place. <b>Conflict</b> is the main problem or struggle. <b>Plot</b> is the sequence of events. <b>Point of view</b> is the perspective from which the story is told. <b>Theme</b> is the main idea or message.</p>
+    <p>The elements work together to build a complete story.</p>
+  </div></details>
+
+  <details class="qa"><summary>4. Explain the five stages of plot with an example.</summary><div class="ans">
+    <p>Plot is the sequence of events in a story. Take the example of a girl who finds a lost wallet and returns it.</p>
+    <p>In the <b>exposition</b> we meet the girl and she finds the wallet. In the <b>rising action</b> the problem grows: she is tempted to keep the money. The <b>climax</b> is the turning point, when she decides to return it. In the <b>falling action</b> the problem is solved as she finds the owner. The <b>resolution</b> is the ending: the owner thanks her and the story ends happily.</p>
+  </div></details>
+
+  <details class="qa"><summary>5. Explain internal and external conflict.</summary><div class="ans">
+    <p>Conflict is the main problem or struggle in a story. Internal conflict happens inside the character, for example a boy who cannot decide whether to confess a lie.</p>
+    <p>External conflict comes from outside the character. It has four types: character vs character, character vs society, character vs nature and character vs technology.</p>
+  </div></details>
+
+  <details class="qa"><summary>6. What is a short story? Give its characteristics and types.</summary><div class="ans">
+    <p>A short story is a brief fictional narrative with a limited number of characters and a focused plot. “The Gift” by O. Henry is an example.</p>
+    <p>Its characteristics are short length, few characters, one central conflict, a focus on one theme, and a surprising or satisfying ending. Its types are fictional, realistic, fantastic, detective and satirical.</p>
+  </div></details>
+
+  <details class="qa"><summary>7. Define figurative language and explain three figures of speech.</summary><div class="ans">
+    <p>Figurative language is the use of expressive and imaginative language to create vivid pictures and emphasize an idea. For example, “Her smile was sunshine” does not mean a real sun, but a beautiful comparison.</p>
+    <p>A <b>metaphor</b> is a direct comparison without like or as, as in “Time is a thief.” A <b>simile</b> is a comparison using like or as, as in “She is as kind as an angel.” <b>Personification</b> gives human qualities to non-human things, as in “The wind whispered.”</p>
+  </div></details>
+
+  <details class="qa"><summary>8. Compare metaphor with simile, and hyperbole with understatement.</summary><div class="ans">
+    <p>Both metaphor and simile compare two things. A simile uses like or as (“as kind as an angel”). A metaphor states the comparison directly (“Time is a thief”).</p>
+    <p>Both hyperbole and understatement change the size of something for effect, in opposite directions. Hyperbole is extreme exaggeration for emphasis (“a million times”). Understatement deliberately says less than the truth (“just a little problem”, said about a big one).</p>
+  </div></details>
+
+  <div class="card" id="drill">
+    <h3>9. Name the figure of speech</h3>
+    <p>Say the answer out loud first, then tap the grey block.</p>
+    <div class="recall">
+    <div class="scroll"><table class="t">
+      <tr><th>Sentence</th><th>Figure</th></tr>
+      <tr><td>Life is a journey.</td><td><span class="rv">metaphor</span></td></tr>
+      <tr><td>He was as brave as a lion.</td><td><span class="rv">simile</span></td></tr>
+      <tr><td>The old house groaned in the storm.</td><td><span class="rv">personification</span></td></tr>
+      <tr><td>A cruel kindness.</td><td><span class="rv">oxymoron</span></td></tr>
+      <tr><td>I have a ton of homework.</td><td><span class="rv">hyperbole</span></td></tr>
+      <tr><td>The exam was a bit tricky (it was extremely hard).</td><td><span class="rv">understatement</span></td></tr>
+      <tr><td>Everyone needs a roof over their head.</td><td><span class="rv">synecdoche (roof stands for house)</span></td></tr>
+      <tr><td>Her voice was music to his ears.</td><td><span class="rv">metaphor</span></td></tr>
+    </table></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>10. Analyze this story</h3>
+    <p>Read it, then answer the six questions plus the figures of speech.</p>
+    <p class="passage">Lina found the leather wallet beside the bus stop, thick with money. Her own pockets were empty, and rent day was close. All evening she carried it like a stone in her coat. Her heart argued with itself: keep it, or return it? At dawn she walked across town to the address inside. The old man who opened the door cried with relief. “Honesty,” he told her, “is the richest thing you carry.” Lina walked home lighter than she had left.</p>
+    <details class="qa" style="background:var(--surface2)"><summary>Model analysis</summary><div class="ans">
+      <p><b>Characters:</b> Lina is the main character and the protagonist. The old man is a minor character. There is no real antagonist.</p>
+      <p><b>Setting:</b> a present-day town, at the bus stop and at the old man’s door, from evening to dawn.</p>
+      <p><b>Conflict:</b> internal. Lina is torn between keeping the money she needs and returning it.</p>
+      <p><b>Plot:</b> Exposition: Lina finds the wallet. Rising action: she carries it all evening and is tempted. Climax: she decides to walk across town to return it. Falling action: the old man cries with relief. Resolution: she walks home lighter.</p>
+      <p><b>Point of view:</b> third person limited. The narrator says “she” and shows only Lina’s thoughts.</p>
+      <p><b>Theme:</b> honesty is worth more than money.</p>
+      <p><b>Figures:</b> “like a stone in her coat” is a simile. “Her heart argued with itself” is personification. “Honesty is the richest thing you carry” is a metaphor.</p>
+    </div></details>
+  </div>
+</main>
+</div>
+
+<nav id="nav" aria-label="Sections">
+  <button data-tab="learn" class="on">Learn</button>
+  <button data-tab="sheet">Cheat sheet</button>
+  <button data-tab="quiz">Quiz</button>
+  <button data-tab="write">Write</button>
+</nav>
+
+<script>
+var BANK=[];
+function q(l,t,o,e){BANK.push({l:l,t:t,o:o,e:e});}
+/* The first option of every question is the correct one. The quiz shuffles them. */
+
+/* Lesson 1 */
+q(1,"Which statement best defines literature?",["Written or spoken works that express human thoughts, feelings, experiences and ideas","Only books that are completely true","Any text that gives instructions, such as a recipe or a manual","Only very old books written by famous authors"],"Literature is written or spoken works expressing human thoughts, feelings, experiences and ideas. Novels, poems, plays and essays are the examples from the lesson.");
+q(1,"Which of these is NOT a purpose of literature in your lesson?",["To sell products","To entertain","To criticize society","To preserve culture"],"The six purposes are: entertain, educate, express feelings, criticize society, preserve culture, develop imagination.");
+q(1,"A reader says: “Novels helped me understand people from other countries.” Which importance of literature is this?",["It teaches us about different cultures","It improves language skills","It develops critical thinking","It helps us understand human emotions"],"The four reasons it matters: improves language skills, develops critical thinking, teaches us about different cultures, helps us understand human emotions.");
+q(1,"A novel about a government that controls what citizens may say is mainly influenced by…",["Politics (power and laws)","Religion (beliefs and values)","Personal experiences","Culture (traditions and customs)"],"Politics means power and laws. The six influences are culture, religion, history, society, politics and personal experiences.");
+q(1,"A writer composes a poem about the pain of losing her own father. Which influence is strongest?",["Personal experiences","History (events)","Politics (power and laws)","Society (social problems)"],"When the writer draws on their own life, the influence is personal experiences.");
+q(1,"Which group contains only forms of fiction?",["Novel, short story, fairy tale","Biography, memoir, essay","Novel, biography, memoir","Essay, fairy tale, autobiography"],"Fiction is based on imaginary characters and events. Biography, memoir and essay are nonfiction.");
+q(1,"What is the main difference between fiction and nonfiction?",["Fiction is imaginary. Nonfiction is based on real people, facts and events","Fiction is written in verse. Nonfiction is written in prose","Fiction is always shorter than nonfiction","Fiction is performed on stage. Nonfiction is read"],"Fiction versus nonfiction is a question of content: imagined or real.");
+q(1,"Prose is…",["Ordinary writing in sentences and paragraphs","Writing in poetic lines with rhythm and rhyme","A work written to be performed","Writing that is always true"],"Prose is ordinary writing in sentences and paragraphs. Verse uses poetic lines. Drama is written to be performed.");
+q(1,"Which pair are forms of verse?",["Sonnet and ballad","Novel and essay","Tragedy and comedy","Biography and memoir"],"Verse includes sonnet, ballad, free verse and lyric poetry.");
+q(1,"Tragedy, comedy and tragicomedy are types of…",["Drama","Verse","Prose","Nonfiction"],"Drama is a literary work written to be performed. Its types are tragedy, comedy and tragicomedy.");
+q(1,"A novel is best classified as…",["Fiction (content) and prose (form)","Nonfiction and prose","Fiction and verse","Nonfiction and drama"],"Fiction or nonfiction asks what the text is about. Prose, verse or drama asks how it is written. A novel answers both questions.");
+q(1,"Which is NOT a main type of prose?",["Sonnet","Short story","Autobiography","Essay"],"Prose: novel, short story, essay, biography, autobiography. A sonnet is verse.");
+
+/* Lesson 2 */
+q(2,"Which element answers the question “Who tells the story?”",["Point of view","Setting","Theme","Conflict"],"Key questions: Characters = Who? Setting = When and where? Conflict = What is the problem? Plot = What happens? Point of view = Who tells the story? Theme = What is the message?");
+q(2,"“Once upon a time, in a small village by a forest…” Which element is being introduced?",["Setting","Conflict","Climax","Theme"],"Setting is the time and place of the story: once upon a time, a village by a forest.");
+q(2,"Which pair are the two components of setting?",["Time and place","Hero and villain","Rising action and climax","Theme and message"],"Setting has two components: time (past, present or future) and place (village, city, forest).");
+q(2,"At the start Omar is selfish. By the end he shares everything he owns. Omar is a…",["Dynamic character","Static character","Antagonist","Minor character"],"Dynamic characters change. Static characters stay the same.");
+q(2,"The stepmother is cruel on the first page and just as cruel on the last. She is…",["A static character","A dynamic character","The protagonist","The narrator"],"Static means stays the same. The three pairs of labels (main or minor, protagonist or antagonist, dynamic or static) answer different questions about a character.");
+q(2,"The protagonist is…",["The hero of the story","The opponent of the hero","A character with a small role","The person who tells the story"],"Protagonist is the hero. Antagonist is the opponent.");
+q(2,"A boy cannot decide whether to confess a lie or stay silent. This conflict is…",["Internal","Character vs character","Character vs society","Character vs nature"],"Internal conflict happens inside the character.");
+q(2,"A hiker struggles to survive a blizzard. The conflict is…",["Character vs nature","Character vs technology","Character vs society","Internal"],"The hiker is fighting the natural world: character vs nature.");
+q(2,"A girl fights an unfair law that harms her whole village. The conflict is…",["Character vs society","Character vs nature","Character vs character","Internal"],"Fighting laws or the rules of a group is character vs society.");
+q(2,"A crew fights a spaceship computer that has gone out of control. The conflict is…",["Character vs technology","Character vs nature","Character vs character","Internal"],"The enemy is a machine: character vs technology.");
+q(2,"What is the correct order of the five plot stages?",["Exposition, rising action, climax, falling action, resolution","Exposition, climax, rising action, resolution, falling action","Rising action, exposition, climax, falling action, resolution","Exposition, rising action, falling action, climax, resolution"],"Every Rabbit Can Fly Rockets: Exposition, Rising action, Climax, Falling action, Resolution.");
+q(2,"The climax of a story is…",["The turning point","The introduction of the characters","The ending","The moment after the problem is solved"],"Climax is the turning point. The resolution is the ending.");
+q(2,"Which plot stage is the moment when the problem begins to be solved?",["Falling action","Rising action","Exposition","Climax"],"Falling action: the problem is solved. Rising action is where the problems grow.");
+q(2,"“I opened the door and my heart was pounding.” The point of view is…",["First person","Second person","Third person limited","Third person omniscient"],"First person uses “I”. Second person uses “you”. Third person uses “he, she, they”.");
+q(2,"A narrator uses “he” and “she” and knows what every character is thinking. This is…",["Third person omniscient","Third person limited","First person","Second person"],"Third person uses he, she or they. Omniscient means all-knowing. Limited means the narrator knows one character’s thoughts only.");
+q(2,"A story shows a boy who risks everything to protect his friend. Which is the best statement of its theme?",["True friendship means standing by each other","A boy lives in a village","The story is told in third person","The boy runs fast"],"Theme is the main idea or message. State it as a full message, not just a word.");
+q(2,"Which element is “the main problem or struggle in a story”?",["Conflict","Plot","Setting","Point of view"],"Conflict is the problem. Plot is the sequence of events that follows from it.");
+
+/* Lesson 3 */
+q(3,"A short story is…",["A brief fictional narrative with a limited number of characters and a focused plot","A long story with many characters and several plots","A true account of real events","A poem written to be performed"],"A short story is a brief fictional narrative with a limited number of characters and a focused plot.");
+q(3,"Which is NOT a characteristic of a short story?",["Many characters and several unrelated conflicts","Short length","One central conflict","Focused on one theme"],"A short story has few characters, one central conflict and one theme.");
+q(3,"Which type of short story is about mystery and crime?",["Detective","Realistic","Fantastic","Satirical"],"Detective stories are about mystery and crime.");
+q(3,"A story full of magic and supernatural events is…",["Fantastic","Realistic","Satirical","Detective"],"Fantastic means supernatural or magical.");
+q(3,"A story about everyday life that could really happen is…",["Realistic","Fantastic","Detective","Satirical"],"Realistic stories are about everyday life.");
+q(3,"A humorous story that also criticizes people or society is…",["Satirical","Realistic","Fantastic","Detective"],"Satirical means humorous and critical.");
+q(3,"How do the elements of a short story compare with the elements of fiction in Lesson 2?",["They are the same six elements","A short story has only three elements","A short story has no theme","A short story has no plot stages"],"Characters, setting, conflict, plot, point of view and theme all work together in a short story.");
+q(3,"In the story where a girl finds a lost wallet and returns it, which moment is the climax?",["She decides to return the wallet","She finds the wallet","She is tempted to keep it","The owner thanks her"],"The decision is the turning point. Finding the wallet is the start, the temptation is rising action, and the thanks come after the climax.");
+q(3,"“She went to school.” Which point of view is this example?",["Third person","First person","Second person","Fourth person"],"She, he and they mean third person.");
+q(3,"Which ending suits a short story, according to the lesson?",["Surprising or satisfying","Always sad","Endless and unresolved","There is no ending"],"The lesson lists a surprising or satisfying ending as a characteristic.");
+q(3,"“The Gift” is the lesson’s example of a short story. Who is its author?",["O. Henry","Charles Dickens","William Shakespeare","Mark Twain"],"The lesson’s example is “The Gift” by O. Henry. Its full title is “The Gift of the Magi”.");
+q(3,"Why is a short story described as “short but powerful”?",["One conflict and one theme leave no room for wasted detail","It always has a happy ending","It has more characters than a novel","It is always based on real events"],"Focus is the power: few characters, one conflict, one theme.");
+
+/* Lesson 4 */
+q(4,"Figurative language is…",["Expressive and imaginative language that creates vivid pictures and emphasizes an idea","Language that means exactly what it says","Language used only in poems","Language used only in dialogue"],"“Her smile was sunshine” is not about a real sun. It is a vivid comparison.");
+q(4,"“Time is a thief.” This is a…",["Metaphor","Simile","Personification","Hyperbole"],"A direct comparison without like or as: time is compared to a thief.");
+q(4,"“She is as kind as an angel.” This is a…",["Simile","Metaphor","Hyperbole","Oxymoron"],"The word “as” signals a simile.");
+q(4,"“The wind whispered.” This is…",["Personification","Metaphor","Oxymoron","Synecdoche"],"Only people whisper, so the wind is given a human quality.");
+q(4,"“Bitter sweet” is an example of…",["Oxymoron","Understatement","Simile","Personification"],"Bitter and sweet are contradictory terms combined.");
+q(4,"“I’ve told you a million times!” is…",["Hyperbole","Understatement","Simile","Metaphor"],"An extreme exaggeration for emphasis, not a real number.");
+q(4,"Said about a huge crisis: “It’s just a little problem.” This is…",["Understatement","Hyperbole","Oxymoron","Personification"],"Understatement deliberately says less than the truth for effect.");
+q(4,"“All hands on deck!” is an example of…",["Synecdoche","Metaphor","Personification","Hyperbole"],"Hands (a part) stand for the sailors (the whole people).");
+q(4,"In “a hundred sails on the horizon”, what do the sails stand for?",["Ships","Only the wind","Only the sailors","Nothing, it is literal"],"Synecdoche: a part (sails) represents the whole (ships).");
+q(4,"What is the key difference between a metaphor and a simile?",["A simile uses “like” or “as”. A metaphor does not","A metaphor exaggerates. A simile minimizes","A simile gives human qualities to objects","There is no difference at all"],"Metaphor = direct comparison. Simile = comparison with like or as.");
+q(4,"“Her smile was sunshine.” This is a…",["Metaphor","Simile","Hyperbole","Oxymoron"],"It says her smile was sunshine, with no like or as: a metaphor.");
+q(4,"“The sun smiled down on the village.” This is…",["Personification","Simile","Hyperbole","Oxymoron"],"Smiling is human, and the sun is not human.");
+q(4,"“He ran as fast as lightning.” This is a…",["Simile","Metaphor","Personification","Synecdoche"],"The word “as” again: a simile.");
+q(4,"“I’m so hungry I could eat a horse.” This is…",["Hyperbole","Understatement","Simile","Metaphor"],"An extreme exaggeration for emphasis.");
+q(4,"After losing his whole house in a fire, Sam calls it “a small inconvenience”. This is…",["Understatement","Hyperbole","Simile","Oxymoron"],"He makes a huge loss sound tiny on purpose.");
+q(4,"“Twenty hands lifted the heavy log.” This is…",["Synecdoche","Personification","Simile","Oxymoron"],"Hands (a part) stand for the workers (the whole).");
+q(4,"“A deafening silence” is an example of…",["Oxymoron","Hyperbole","Simile","Understatement"],"Deafening (very loud) and silence (no sound) contradict each other. This example is not on your slide, but the rule is the same as “bitter sweet”.");
+q(4,"Which two figures work in opposite directions?",["Hyperbole and understatement","Simile and metaphor","Personification and synecdoche","Oxymoron and simile"],"Hyperbole makes something bigger than it is. Understatement makes it smaller.");
+q(4,"Why does “a million times” in “I’ve told you a million times!” not mean exactly 1,000,000?",["It is an exaggeration for emphasis","It is a comparison using like","It is a part representing the whole","It gives human qualities to a number"],"Hyperbole is an exaggeration, not a real number.");
+</script>
+
+<script>
+(function(){
+  function $(s,r){return (r||document).querySelector(s);}
+  function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+  var TABS=['learn','sheet','quiz','write'];
+
+  /* ---- tabs ---- */
+  function showTab(name,scroll){
+    if(TABS.indexOf(name)<0){name='learn';}
+    TABS.forEach(function(t){var el=document.getElementById('tab-'+t);if(el){el.hidden=(t!==name);}});
+    $$('#nav button').forEach(function(b){
+      var on=b.getAttribute('data-tab')===name;
+      b.classList.toggle('on',on);
+      if(on){b.setAttribute('aria-current','page');}else{b.removeAttribute('aria-current');}
+    });
+    if(scroll){window.scrollTo(0,0);}
+  }
+  $('#nav').addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b){return;}
+    var name=b.getAttribute('data-tab');
+    showTab(name,true);
+    try{location.hash=name;}catch(err){}
+  });
+  window.addEventListener('hashchange',function(){showTab(location.hash.replace('#',''),true);});
+  showTab(location.hash.replace('#',''),false);
+
+  /* ---- lesson switcher ---- */
+  $('#lessonSeg').addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b){return;}
+    var l=b.getAttribute('data-l');
+    $$('#lessonSeg button').forEach(function(x){x.classList.toggle('on',x===b);});
+    $$('.pane').forEach(function(p){p.hidden=(p.getAttribute('data-pane')!==l);});
+    window.scrollTo(0,0);
+  });
+
+  /* ---- test mode / tap to reveal ---- */
+  var recallBtn=$('#recallBtn'),sheetBody=$('#sheetBody');
+  recallBtn.addEventListener('click',function(){
+    var on=!sheetBody.classList.contains('recall');
+    sheetBody.classList.toggle('recall',on);
+    $$('.rv',sheetBody).forEach(function(r){r.classList.remove('on');});
+    recallBtn.setAttribute('aria-pressed',on?'true':'false');
+    recallBtn.textContent=on?'Test mode on: tap grey blocks to reveal':'Test myself: hide answers';
+  });
+  document.addEventListener('click',function(e){
+    var r=e.target.closest('.rv');
+    if(r&&r.closest('.recall')){r.classList.toggle('on');}
+  });
+
+  /* ---- quiz ---- */
+  var box=$('#quizBox'),S=null;
+  function sh(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var x=a[i];a[i]=a[j];a[j]=x;}return a;}
+  function count(l){return BANK.filter(function(x){return x.l===l;}).length;}
+
+  function menu(){
+    S=null;
+    var h='<h2>Quiz</h2><p class="lead">'+BANK.length+' questions. Answers appear right after each tap, with the reason. Aim for 85% or more on the mixed quiz.</p>';
+    h+='<div class="stack" style="margin-top:14px">';
+    h+='<button class="btn" data-go="quick">Mixed quiz: 15 random questions</button>';
+    h+='<div class="grid" style="margin:0">';
+    for(var l=1;l<=4;l++){h+='<button class="btn ghost" data-go="'+l+'">Lesson '+l+' ('+count(l)+')</button>';}
+    h+='</div>';
+    h+='<button class="btn ghost" data-go="all">Everything: all '+BANK.length+' questions</button>';
+    h+='</div>';
+    box.innerHTML=h;
+  }
+
+  function start(kind,custom){
+    var pool;
+    if(custom){pool=sh(custom);}
+    else if(kind==='quick'){pool=sh(BANK).slice(0,15);}
+    else if(kind==='all'){pool=sh(BANK);}
+    else{pool=sh(BANK.filter(function(x){return x.l===parseInt(kind,10);}));}
+    S={kind:kind,pool:pool,i:0,score:0,missed:[],locked:false};
+    render();
+  }
+
+  function render(){
+    if(S.i>=S.pool.length){finish();return;}
+    var Q=S.pool[S.i];
+    S.opts=sh(Q.o.map(function(t,k){return {t:t,ok:k===0};}));
+    S.locked=false;
+    var pct=Math.round(S.i/S.pool.length*100);
+    var h='<div class="eyebrow">Lesson '+Q.l+' · Question '+(S.i+1)+' of '+S.pool.length+'</div>';
+    h+='<div class="bar" aria-hidden="true"><i style="width:'+pct+'%"></i></div>';
+    h+='<h3 style="margin-bottom:14px">'+Q.t+'</h3>';
+    S.opts.forEach(function(o,k){h+='<button class="opt" data-pick="'+k+'">'+o.t+'</button>';});
+    h+='<div id="fb"></div>';
+    box.innerHTML=h;
+    window.scrollTo(0,0);
+  }
+
+  function pick(k){
+    if(S.locked){return;}
+    S.locked=true;
+    var Q=S.pool[S.i],right=S.opts[k].ok;
+    if(right){S.score++;}else{S.missed.push(Q);}
+    $$('.opt',box).forEach(function(b,idx){
+      b.disabled=true;
+      if(S.opts[idx].ok){b.classList.add('right');}
+      else if(idx===k){b.classList.add('wrong');}
+    });
+    var last=(S.i===S.pool.length-1);
+    $('#fb').innerHTML='<div class="fb '+(right?'good':'bad')+'"><b>'+(right?'Correct':'Not quite')+'</b>'+Q.e+'</div>'+
+      '<button class="btn" data-next="1">'+(last?'See my score':'Next question')+'</button>';
+    var fb=$('#fb');if(fb&&fb.scrollIntoView){fb.scrollIntoView({block:'nearest'});}
+  }
+
+  function finish(){
+    var n=S.pool.length,pct=Math.round(S.score/n*100);
+    var msg=pct>=85?'Exam ready on this set. Try the mixed quiz again to be sure.':
+            pct>=65?'Close. Read the explanations below, then retry the ones you missed.':
+            'Go back to the Learn tab for the lessons below, then retry.';
+    var h='<div class="eyebrow">Result</div><div class="score">'+S.score+' / '+n+'</div>';
+    h+='<p class="lead" style="margin-top:6px">'+pct+'%. '+msg+'</p>';
+    h+='<div class="row" style="margin:14px 0">';
+    if(S.missed.length){h+='<button class="btn" data-retry="1">Retry the '+S.missed.length+' I missed</button>';}
+    h+='<button class="btn ghost" data-menu="1">Back to quiz menu</button></div>';
+    if(S.missed.length){
+      h+='<div class="card"><h3>What you missed</h3>';
+      S.missed.forEach(function(Q){
+        h+='<div class="miss"><small>Lesson '+Q.l+'</small><div><b>'+Q.t+'</b></div><div>Answer: '+Q.o[0]+'</div><small>'+Q.e+'</small></div>';
+      });
+      h+='</div>';
+    }
+    box.innerHTML=h;
+    window.scrollTo(0,0);
+  }
+
+  box.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b){return;}
+    if(b.hasAttribute('data-go')){start(b.getAttribute('data-go'));}
+    else if(b.hasAttribute('data-pick')){pick(parseInt(b.getAttribute('data-pick'),10));}
+    else if(b.hasAttribute('data-next')){S.i++;render();}
+    else if(b.hasAttribute('data-retry')){start('retry',S.missed.slice());}
+    else if(b.hasAttribute('data-menu')){menu();}
+  });
+  menu();
+})();
+</script>
+
+</body></html>
