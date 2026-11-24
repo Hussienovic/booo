@@ -1,142 +1,156 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Literature L1 Exam Kit</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@400;500;600&family=Fraunces:ital,opsz,wght@1,9..144,500&family=JetBrains+Mono:wght@500&display=swap">
 <style>
-/* Layout: phone-first study app. One column, four bottom tabs (Learn, Cheat sheet, Quiz, Write).
-   Navy ink on a cool lavender white, with a single pink accent that echoes the pink and navy of the lesson slides. */
 :root{
-  --bg:#F5F4FB; --surface:#FFFFFF; --surface2:#ECEAF7; --ink:#1B2150; --muted:#555A82; --line:#D9D6EC;
-  --accent:#B8235F; --on-accent:#FFFFFF; --hi:#FDEAF2;
-  --good:#176B43; --goodbg:#E2F3E9; --bad:#A8231A; --badbg:#FBE7E4;
-  --display:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
-  --body:'Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+  --bg:#0B0B0E;--surface:#141418;--surface2:#1D1D23;--ink:#F3F3F1;--muted:#9A9AA4;--line:#26262D;
+  --accent:#FF5A2B;--on-accent:#0B0B0E;--hi:#2A1812;--glass:rgba(11,11,14,.72);
+  --good:#62D69C;--goodbg:#10281C;--bad:#FF8C7C;--badbg:#321816;
+  --display:'Inter Tight','Inter',system-ui,sans-serif;--body:'Inter',system-ui,-apple-system,sans-serif;
+  --serif:'Fraunces',Georgia,serif;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);color-scheme:dark;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#12152B; --surface:#1B2040; --surface2:#262C57; --ink:#ECEBFA; --muted:#A8ACCF; --line:#343B6E;
-    --accent:#FF7AAE; --on-accent:#2A0A19; --hi:#2D2250;
-    --good:#6FD9A4; --goodbg:#16352A; --bad:#FF9188; --badbg:#3D1B1E;
-    color-scheme:dark;
-  }
+:root[data-theme="light"]{
+  --bg:#E8E9EC;--surface:#FFFFFF;--surface2:#F0F1F3;--ink:#101114;--muted:#5C5F67;--line:#D5D7DC;
+  --accent:#D93A0A;--on-accent:#FFFFFF;--hi:#FCE9E1;--glass:rgba(232,233,236,.78);
+  --good:#146B3F;--goodbg:#DDF0E4;--bad:#A3271C;--badbg:#F8E3DF;color-scheme:light;
 }
-:root[data-theme="dark"]{
-  --bg:#12152B; --surface:#1B2040; --surface2:#262C57; --ink:#ECEBFA; --muted:#A8ACCF; --line:#343B6E;
-  --accent:#FF7AAE; --on-accent:#2A0A19; --hi:#2D2250;
-  --good:#6FD9A4; --goodbg:#16352A; --bad:#FF9188; --badbg:#3D1B1E;
-  color-scheme:dark;
-}
-*{box-sizing:border-box}
-body{
-  background:var(--bg); color:var(--ink); font-family:var(--body); font-size:16px; line-height:1.55;
-  padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px));
-  padding-block:20px 104px;
-}
-.wrap{max-width:720px;margin:0 auto}
-h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
-h1{font-size:2rem;font-weight:700;letter-spacing:-.01em}
-h2{font-size:1.45rem;font-weight:700;margin-bottom:6px}
-h3{font-size:1.15rem;font-weight:700;margin-bottom:8px}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 130px;transition:background .4s}
+.wrap{max-width:680px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);line-height:1.1;text-wrap:balance;margin:0;font-weight:700;letter-spacing:-.025em}
+h2{font-size:2rem;margin-bottom:10px;letter-spacing:-.035em}
+h3{font-size:1.2rem;margin-bottom:10px}
 p{margin:0 0 10px}
-.eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--accent)}
-.lead{color:var(--muted);font-size:1.02rem}
-header{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
-header p{margin:0;color:var(--muted)}
+.eyebrow,.lbl{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;font-weight:500;color:var(--accent)}
+.lead{color:var(--muted);font-size:1.05rem;line-height:1.55}
+/* hero */
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#themeBtn{border:1px solid var(--line);background:transparent;border-radius:999px;font:inherit;color:var(--ink);min-height:36px;padding:0 14px}
+.hero h1{font-size:clamp(3.4rem,19vw,6rem);font-weight:800;letter-spacing:-.055em;line-height:.9;margin:34px 0 0;position:relative}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln span{display:block;animation:up 1s var(--ease) both}
+.hero h1 .ln:nth-child(2) span{animation-delay:.12s}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.stage{height:250px;perspective:850px;perspective-origin:50% 35%;margin:-6px -16px 0;pointer-events:none;animation:fade 1.4s .3s both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.ring{position:relative;width:128px;height:168px;margin:34px auto 0;transform-style:preserve-3d;animation:spin 30s linear infinite}
+@keyframes spin{from{transform:rotateX(-14deg) rotateY(0)}to{transform:rotateX(-14deg) rotateY(360deg)}}
+.face{position:absolute;inset:0;border-radius:20px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;backface-visibility:hidden;
+  transform:rotateY(calc(var(--i)*60deg)) translateZ(124px);background:var(--surface2);color:var(--ink);border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.25)}
+.face b{font-family:var(--display);font-size:2.4rem;font-weight:800;letter-spacing:-.05em;line-height:1}
+.face span{font-size:.74rem;line-height:1.25;font-weight:500}
+.face.a{background:var(--accent);color:var(--on-accent);border-color:transparent}
+.face.w{background:#F3F3F1;color:#101114;border-color:transparent}
+.tag{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--accent);font-size:1.15rem;margin:6px 0 14px}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.stats span{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--muted)}
+.stats b{color:var(--ink);font-weight:500}
 .stack{display:flex;flex-direction:column;gap:14px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:22px;min-width:0}
 .card>:last-child{margin-bottom:0}
-.say{background:var(--hi);border-radius:10px;padding:12px 14px;margin:12px 0 0}
-.say .lbl,.watch .lbl{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:3px}
-.watch{background:var(--surface2);border-radius:10px;padding:12px 14px;margin:12px 0 0}
+.say,.watch{background:var(--hi);border-radius:16px;padding:13px 16px;margin:14px 0 0}
+.watch{background:var(--surface2)}
+.lbl{display:block;margin-bottom:4px}
 .watch .lbl{color:var(--muted)}
 ul.plain,ol.plain{margin:0 0 10px;padding-left:1.2rem}
-ul.plain li,ol.plain li{margin-bottom:4px}
+ul.plain li,ol.plain li{margin-bottom:6px}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 10px}
 .grid.one{grid-template-columns:minmax(0,1fr)}
-.item{background:var(--surface2);border-radius:10px;padding:10px 12px;min-width:0}
-.item b{display:block;font-family:var(--display);font-size:1rem}
+.item{background:var(--surface2);border-radius:16px;padding:13px 15px;min-width:0}
+.item b{display:block;font-family:var(--display);font-size:1.02rem;letter-spacing:-.01em}
 .item span{color:var(--muted);font-size:.9rem}
-.qchip{display:inline-block;background:var(--accent);color:var(--on-accent);border-radius:999px;font-size:.74rem;font-weight:600;padding:2px 10px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+.qchip{display:inline-block;font-family:var(--mono);color:var(--accent);border:1px solid var(--accent);border-radius:999px;font-size:.64rem;letter-spacing:.04em;text-transform:uppercase;padding:2px 9px;margin-left:6px;vertical-align:middle;white-space:nowrap}
 .scroll{overflow-x:auto;margin:0 0 10px}
 table.t{border-collapse:collapse;width:100%;min-width:300px;font-size:.93rem}
-table.t th,table.t td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
-table.t th{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+table.t th,table.t td{text-align:left;vertical-align:top;padding:11px 10px;border-bottom:1px solid var(--line)}
+table.t th{font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
 table.t td:first-child{font-weight:600;width:34%}
-ol.steps{list-style:none;margin:0 0 10px;padding:0;counter-reset:s;display:flex;flex-direction:column;gap:8px}
-ol.steps li{counter-increment:s;display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:start}
-ol.steps li::before{content:counter(s);width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:700;display:grid;place-items:center;font-family:var(--display)}
-ol.steps b{display:block}
-ol.steps span{color:var(--muted);font-size:.93rem}
-.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:0 0 14px}
-button{font:inherit;color:inherit;cursor:pointer}
-.seg button{border:1px solid var(--line);background:var(--surface);border-radius:10px;min-height:44px;font-weight:600;font-size:.9rem;padding:4px}
-.seg button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.btn{border:0;background:var(--accent);color:var(--on-accent);font-weight:600;border-radius:10px;min-height:46px;padding:10px 18px}
+ol.steps{list-style:none;margin:0 0 10px;padding:0;counter-reset:s;display:flex;flex-direction:column;gap:12px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;align-items:start}
+ol.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;background:var(--accent);color:var(--on-accent);border-radius:50%;width:34px;height:34px;display:grid;place-items:center}
+ol.steps b{display:block}ol.steps span{color:var(--muted);font-size:.93rem}
+button{font:inherit;color:inherit;cursor:pointer;transition:transform .15s var(--ease),background .2s,opacity .2s}
+button:active{transform:scale(.97)}
+.seg{position:sticky;top:max(8px,env(safe-area-inset-top,0px));z-index:15;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:0 0 18px;padding:5px;
+  background:var(--glass);backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6);border:1px solid var(--line);border-radius:22px}
+.seg button{border:0;background:transparent;border-radius:17px;min-height:56px;padding:6px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;color:var(--muted)}
+.seg button i{font-style:normal;font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:-.03em}
+.seg button span{font-size:.64rem;font-weight:500}
+.seg button.on{background:var(--ink);color:var(--bg)}
+.seg button.done i::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-left:4px;vertical-align:middle}
+.btn{border:0;background:var(--accent);color:var(--on-accent);font-weight:600;border-radius:999px;min-height:52px;padding:12px 22px}
 .btn.ghost{background:var(--surface2);color:var(--ink)}
 .row{display:flex;flex-wrap:wrap;gap:10px}
-#nav{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:2px;background:var(--surface);border-top:1px solid var(--line);
-  padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
-#nav button{flex:1;min-height:50px;border:0;background:transparent;border-radius:10px;font-weight:600;font-size:.82rem;color:var(--muted);position:relative}
-#nav button.on{color:var(--accent);background:var(--hi)}
+.readbtn{margin-top:6px;width:100%}
+#nav{position:fixed;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;gap:2px;
+  max-width:520px;margin:0 auto;padding:6px;background:var(--glass);backdrop-filter:blur(22px) saturate(1.7);-webkit-backdrop-filter:blur(22px) saturate(1.7);border:1px solid var(--line);border-radius:26px;box-shadow:0 12px 40px rgba(0,0,0,.28)}
+#nav button{flex:1;min-height:52px;border:0;background:transparent;border-radius:20px;font-size:.8rem;font-weight:600;color:var(--muted)}
+#nav button.on{color:var(--on-accent);background:var(--accent)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.rv{border-radius:4px}
+.rv{border-radius:5px}
 .recall .rv:not(.on){color:transparent;background:var(--line);cursor:pointer;user-select:none;-webkit-user-select:none}
 .recall .rv:not(.on) *{color:transparent}
-.bar{height:6px;background:var(--surface2);border-radius:999px;overflow:hidden;margin:6px 0 14px}
-.bar i{display:block;height:100%;background:var(--accent);width:0}
-.opt{display:block;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 8px;min-height:48px}
+.bar{height:5px;background:var(--surface2);border-radius:999px;overflow:hidden;margin:8px 0 18px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .5s var(--ease)}
+.opt{display:block;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:15px 16px;margin:0 0 10px;min-height:56px}
 .opt.right{background:var(--goodbg);border-color:var(--good)}
-.opt.wrong{background:var(--badbg);border-color:var(--bad)}
-.opt[disabled]{cursor:default}
-.fb{border-radius:10px;padding:12px 14px;margin:6px 0 12px}
-.fb.good{background:var(--goodbg)}
-.fb.bad{background:var(--badbg)}
+.opt.wrong{background:var(--badbg);border-color:var(--bad);animation:nudge .35s}
+@keyframes nudge{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.opt[disabled]{cursor:default;color:var(--ink)}
+.fb{border-radius:16px;padding:13px 16px;margin:6px 0 12px;animation:in .4s var(--ease)}
+.fb.good{background:var(--goodbg)}.fb.bad{background:var(--badbg)}
 .fb b{display:block;margin-bottom:2px}
-.score{font-family:var(--display);font-size:2.6rem;font-weight:700;line-height:1}
-.miss{border-top:1px solid var(--line);padding:12px 0}
-.miss:first-of-type{border-top:0}
-.miss small{color:var(--muted)}
-details.qa{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 14px}
-details.qa summary{cursor:pointer;padding:13px 0;font-weight:600;list-style:none;display:flex;gap:10px;justify-content:space-between;align-items:flex-start}
+.score{font-family:var(--display);font-size:4rem;font-weight:800;letter-spacing:-.05em;line-height:1;color:var(--accent)}
+.miss{border-top:1px solid var(--line);padding:12px 0}.miss:first-of-type{border-top:0}.miss small{color:var(--muted)}
+details.qa{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:0 18px}
+details.qa summary{cursor:pointer;padding:16px 0;font-weight:600;list-style:none;display:flex;gap:12px;justify-content:space-between;align-items:flex-start}
 details.qa summary::-webkit-details-marker{display:none}
-details.qa summary::after{content:"+";color:var(--accent);font-weight:700;font-size:1.2rem;line-height:1}
-details.qa[open] summary::after{content:"–"}
-details.qa .ans{padding:0 0 14px}
-details.qa .ans p:last-child{margin-bottom:0}
-details.plan{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:0 16px;margin-bottom:14px}
-details.plan summary{cursor:pointer;padding:14px 0;font-weight:600;font-family:var(--display);font-size:1.05rem}
-details.plan[open] summary{padding-bottom:6px}
-details.plan ol{margin:0 0 14px;padding-left:1.2rem}
-details.plan li{margin-bottom:6px}
-.passage{background:var(--surface2);border-radius:10px;padding:12px 14px;font-style:italic;margin:0 0 12px}
+details.qa summary::after{content:"+";font-family:var(--display);color:var(--accent);font-size:1.5rem;line-height:1;transition:transform .3s var(--ease)}
+details.qa[open] summary::after{transform:rotate(45deg)}
+details.qa .ans{padding:0 0 16px;animation:in .4s var(--ease)}details.qa .ans p:last-child{margin-bottom:0}
+details.plan{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:0 20px;margin-bottom:22px}
+details.plan summary{cursor:pointer;padding:18px 0;font-weight:700;font-family:var(--display);font-size:1.1rem;letter-spacing:-.02em}
+details.plan ol{margin:0 0 16px;padding-left:1.2rem}details.plan li{margin-bottom:8px}
+.passage{background:var(--surface2);border-radius:16px;padding:14px 16px;font-family:var(--serif);font-style:italic;margin:0 0 12px}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
+.js .rise{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rise.in{opacity:1;transform:none}
 @media (max-width:420px){.grid{grid-template-columns:minmax(0,1fr)}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rise{opacity:1;transform:none}}
 </style>
 
+<script>document.documentElement.classList.add("js")</script>
 <div class="wrap">
-<header>
-  <span class="eyebrow">Study of Literary Texts (L1)</span>
-  <h1>Literature L1 Exam Kit</h1>
-  <p>Lessons 1 to 4: literature, elements of fiction, the short story, figurative language.</p>
+<header class="hero">
+  <div class="meta"><span>Literary Texts · L1 · S1</span><button id="themeBtn" type="button" aria-label="Switch light or dark theme">Theme</button></div>
+  <h1><span class="ln"><span>Exam</span></span><span class="ln"><span>ready.</span></span></h1>
+  <div class="stage" aria-hidden="true"><div class="ring"><div class="face " style="--i:0"><b>01</b><span>Introduction to literature</span></div><div class="face a" style="--i:1"><b>02</b><span>Elements of fiction</span></div><div class="face w" style="--i:2"><b>03</b><span>The short story</span></div><div class="face " style="--i:3"><b>04</b><span>Figurative language</span></div><div class="face a" style="--i:4"><b>69</b><span>Quiz questions</span></div><div class="face w" style="--i:5"><b>1</b><span>Page cheat sheet</span></div></div></div>
+  <p class="tag">Lessons, quizzes and model answers in one place.</p>
+  <p class="lead">A complete Semester 1 revision guide for Study of Literary Texts: four lessons with exam wording, a cheat sheet, a quiz with explanations, and written practice with model answers.</p>
+  <div class="stats"><span>lessons read <b id="stRead">0/4</b></span><span>best quiz <b id="stBest">–</b></span></div>
 </header>
 
 <details class="plan" open>
-  <summary>Tonight’s plan</summary>
+  <summary>Suggested study plan (about 100 minutes)</summary>
   <ol>
-    <li><b>Learn</b> (about 40 min). Read one lesson, then take that lesson’s quiz straight away.</li>
+    <li><b>Learn</b> (40 min). Read one lesson, then take that lesson’s quiz straight away. Tap “mark as read” at the bottom.</li>
     <li><b>Quiz</b> (20 min). Run the mixed quiz until you score 85% or more.</li>
     <li><b>Write</b> (30 min). Answer each question on paper first, then open the model answer.</li>
-    <li><b>Cheat sheet</b> (10 min) in test mode, then sleep. Sleep is part of revising.</li>
+    <li><b>Cheat sheet</b> (10 min) in test mode. Then rest: sleep helps memory.</li>
   </ol>
 </details>
 
 <!-- ============ LEARN ============ -->
 <main id="tab-learn">
 <div class="seg" id="lessonSeg" role="tablist" aria-label="Lessons">
-  <button data-l="1" class="on">Lesson 1</button>
-  <button data-l="2">Lesson 2</button>
-  <button data-l="3">Lesson 3</button>
-  <button data-l="4">Lesson 4</button>
+  <button data-l="1" class="on"><i>01</i><span>Literature</span></button>
+  <button data-l="2"><i>02</i><span>Fiction</span></button>
+  <button data-l="3"><i>03</i><span>Short story</span></button>
+  <button data-l="4"><i>04</i><span>Figures</span></button>
 </div>
 
 <!-- Lesson 1 -->
@@ -149,7 +163,7 @@ details.plan li{margin-bottom:6px}
   <article class="card">
     <h3>What is literature?</h3>
     <p>Literature is writing, or storytelling out loud, about being human: what people think, feel and live through. A shopping list is writing, but nobody studies it as literature. A poem about missing someone is literature, because it expresses a feeling.</p>
-    <p class="say"><span class="lbl">Say it in the exam</span>Literature is a collection of written or spoken works that express human thoughts, feelings, experiences and ideas, such as novels, poems, plays and essays.</p>
+    <p class="say"><span class="lbl">Say it in the exam</span>Literature is a collection of written or spoken works that express human thoughts, feelings, experiences and ideas, such as novels, poems, plays and essays. In the handout’s words: the written (and sometimes spoken) works produced as a form of expression.</p>
   </article>
 
   <article class="card">
@@ -187,6 +201,7 @@ details.plan li{margin-bottom:6px}
       <tr><td>Society</td><td>People and social problems. A story about poverty or inequality.</td></tr>
       <tr><td>Politics</td><td>Power and laws. A novel about a government that controls its people.</td></tr>
       <tr><td>Personal experiences</td><td>The writer’s own life. A poem about losing someone.</td></tr>
+      <tr><td>Gender</td><td>Named in the program list too, though not on the slide. How gender roles and experiences shape what is written.</td></tr>
     </table></div>
   </article>
 
@@ -204,6 +219,16 @@ details.plan li{margin-bottom:6px}
       <tr><td>Drama</td><td>Tragedy, comedy, tragicomedy</td></tr>
     </table></div>
     <p class="watch"><span class="lbl">Watch out</span>One text answers both questions. A novel is fiction (imagined) and prose (sentences). An essay is nonfiction and prose. A tragedy is drama. If you only answer one question, you lose marks.</p>
+  </article>
+  <article class="card">
+    <h3>More from the handout <span class="qchip">worth a mark</span></h3>
+    <div class="grid one">
+      <div class="item"><b>Nonfiction</b><span>Factual, non-imaginary writing meant to inform, educate or demonstrate. Examples: political essays, biographies.</span></div>
+      <div class="item"><b>Fiction</b><span>Creative works with invented stories: imagined events, people and places. The writer may be influenced by real life or rely entirely on imagination. Examples: novels, short stories, plays.</span></div>
+      <div class="item"><b>Tragedy</b><span>Focuses on the conflicts of a tragic hero, with strong emotional engagement, and ends with a serious, often sad outcome.</span></div>
+      <div class="item"><b>Comedy</b><span>Many characters and their adventures; offers political, social or religious criticism; ends in a playful, light and often happy way.</span></div>
+    </div>
+    <p>Verse is arranged in lines (each line is a “verse”) and is used in poems and in religious texts such as the Quran and the Bible. It has a pattern, a rhythm and sometimes a rhyme.</p>
   </article>
 </section>
 
@@ -248,6 +273,7 @@ details.plan li{margin-bottom:6px}
       <tr><td>Character vs technology</td><td>machines</td><td>A crew against a runaway computer.</td></tr>
     </table></div>
     <p>Internal means inside the character. The other four are external, which means the problem comes from outside.</p>
+    <p>From the handout: external problems include an enemy, survival and difficult life conditions. Internal struggles include guilt, fear and doubt.</p>
   </article>
 
   <article class="card">
@@ -278,7 +304,7 @@ details.plan li{margin-bottom:6px}
   <article class="card">
     <h3>6. Theme <span class="qchip">What is the message?</span></h3>
     <p>Theme is the main idea or message of the story. Typical themes: love, friendship, courage, justice, hope, education.</p>
-    <p class="watch"><span class="lbl">Watch out</span>Those one-word themes are topics. A topic is “friendship”. A theme is a message about it: “True friends stand by each other in hard times.” In an exam, write the theme as a full sentence.</p>
+    <p class="watch"><span class="lbl">Exam tip</span>Your handout treats a theme as the central idea or topic (love, friendship, courage) and also as the message the writer wants to convey. The safe answer does both: name the theme, then add one sentence of message, such as “Friendship: true friends stand by each other in hard times.”</p>
   </article>
 
   <article class="card">
@@ -293,6 +319,18 @@ details.plan li{margin-bottom:6px}
       <tr><td>Theme</td><td>What is the message?</td></tr>
     </table></div>
     <p class="say"><span class="lbl">Memory trick</span>Can Some Cats Please Play Together: Characters, Setting, Conflict, Plot, Point of view, Theme.</p>
+  </article>
+  <article class="card">
+    <h3>Extra detail from your handout <span class="qchip">worth a mark</span></h3>
+    <ul class="plain">
+      <li><b>Major vs minor themes:</b> major themes are the most important topics, repeated throughout a work (or several works). Minor themes are less important and appear briefly in some parts.</li>
+      <li><b>Not every story has a resolution.</b> Some have an open ending or a cliffhanger. Resolution is also called denouement.</li>
+      <li><b>Climax:</b> the highest point, where tension is at its maximum. It often changes the characters’ fate or reveals something hidden.</li>
+      <li><b>Setting</b> can include season, scenery, buildings and weather. It sets the mood and helps us understand the themes.</li>
+      <li><b>Protagonist and antagonist:</b> the antagonist is whoever stands against the protagonist, as a direct enemy or as a force that blocks their progress.</li>
+      <li><b>Any character counts</b>, important or trivial, and characters can be people, animals or even animated objects.</li>
+    </ul>
+    <p class="watch"><span class="lbl">Symbolism</span>It is on the program but not in your handout, so expect at most a short question. A symbol is an object, person, place or color that stands for a bigger idea. A dove stands for peace; a dark storm can stand for danger or sadness.</p>
   </article>
 </section>
 
@@ -420,6 +458,20 @@ details.plan li{margin-bottom:6px}
     <p>The lesson’s skill is explaining what a figure means in the text. Use four steps: quote it, name it, say what it really means, say its effect.</p>
     <p class="say"><span class="lbl">Model answer</span>“Time is a thief” is a metaphor. Time is compared directly to a thief, without like or as. Time is not a person, but it takes moments from our lives without us noticing. This makes the idea vivid and a little sad.</p>
   </article>
+  <article class="card">
+    <h3>The handout examples <span class="qchip">learn these too</span></h3>
+    <div class="scroll"><table class="t">
+      <tr><th>Figure</th><th>Example from the handout</th></tr>
+      <tr><td>Metaphor</td><td>“This soldier is a true lion.” (shared quality: courage)</td></tr>
+      <tr><td>Simile</td><td>“He is strong as an ox.”</td></tr>
+      <tr><td>Personification</td><td>“The sun stared at us.”</td></tr>
+      <tr><td>Hyperbole</td><td>“I’m dying of thirst.” (not literal; shows how thirsty)</td></tr>
+      <tr><td>Understatement</td><td>“I think I did ok in the exam,” after getting the best mark. Often ironic, or used to soften a serious situation.</td></tr>
+      <tr><td>Oxymoron</td><td>“A silent scream.” Two opposites create a new meaning, such as silent suffering.</td></tr>
+      <tr><td>Synecdoche</td><td>“Teaching young brains.” Brains stand for students, stressing intelligence.</td></tr>
+    </table></div>
+    <p class="watch"><span class="lbl">Metonymy</span>The program title says “metonymy/synecdoche”, but your handout covers only synecdoche. Metonymy replaces a thing with something closely linked to it: “the crown” for the king, “the press” for journalists. Synecdoche is the part-for-whole kind.</p>
+  </article>
 </section>
 </main>
 
@@ -443,7 +495,7 @@ details.plan li{margin-bottom:6px}
       <tr><td>Fiction / nonfiction</td><td><span class="rv">imaginary characters and events / real people, facts and events</span></td></tr>
       <tr><td>Prose</td><td><span class="rv">ordinary sentences and paragraphs: novel, short story, essay, biography, autobiography</span></td></tr>
       <tr><td>Verse</td><td><span class="rv">poetic lines, rhythm and rhyme: sonnet, ballad, free verse, lyric poetry</span></td></tr>
-      <tr><td>Drama</td><td><span class="rv">written to be performed: tragedy, comedy, tragicomedy</span></td></tr>
+      <tr><td>Drama</td><td><span class="rv">written to be performed: tragedy (tragic hero, sad ending), comedy (many characters, criticism, happy ending), tragicomedy</span></td></tr>
     </table></div>
   </article>
 
@@ -496,7 +548,7 @@ details.plan li{margin-bottom:6px}
       <tr><td>Main vs protagonist vs dynamic</td><td>Importance, role and change. Three different questions.</td></tr>
       <tr><td>Conflict vs plot</td><td>Conflict is the problem. Plot is the events in order.</td></tr>
       <tr><td>Climax vs resolution</td><td>Climax is the turning point. Resolution is the ending.</td></tr>
-      <tr><td>Topic vs theme</td><td>Topic is a word (friendship). Theme is a message about it.</td></tr>
+      <tr><td>Theme: word or message?</td><td>The handout allows both: central ideas or topics (love, courage) and the message conveyed. Name it, then add one sentence of message.</td></tr>
       <tr><td>Limited vs omniscient</td><td>Limited knows one mind. Omniscient knows all minds.</td></tr>
       <tr><td>Metaphor vs simile</td><td>Same idea. Simile uses like or as.</td></tr>
       <tr><td>Hyperbole vs understatement</td><td>Bigger than the truth vs smaller than the truth.</td></tr>
@@ -517,7 +569,7 @@ details.plan li{margin-bottom:6px}
   <article class="card">
     <h3>In the exam room</h3>
     <ul class="plain">
-      <li>Use the lesson’s wording for definitions. Your teacher marks against it.</li>
+      <li>Use the lesson’s own wording for definitions.</li>
       <li>Shape every answer as term, definition, example.</li>
       <li>For a figure of speech: name it, quote the clue, explain the meaning.</li>
       <li>For a story: answer the six questions in order.</li>
@@ -694,6 +746,15 @@ q(4,"“Twenty hands lifted the heavy log.” This is…",["Synecdoche","Personi
 q(4,"“A deafening silence” is an example of…",["Oxymoron","Hyperbole","Simile","Understatement"],"Deafening (very loud) and silence (no sound) contradict each other. This example is not on your slide, but the rule is the same as “bitter sweet”.");
 q(4,"Which two figures work in opposite directions?",["Hyperbole and understatement","Simile and metaphor","Personification and synecdoche","Oxymoron and simile"],"Hyperbole makes something bigger than it is. Understatement makes it smaller.");
 q(4,"Why does “a million times” in “I’ve told you a million times!” not mean exactly 1,000,000?",["It is an exaggeration for emphasis","It is a comparison using like","It is a part representing the whole","It gives human qualities to a number"],"Hyperbole is an exaggeration, not a real number.");
+q(1,"Which drama focuses on a tragic hero and ends with a serious, often sad outcome?",["Tragedy","Comedy","Lyric poetry","Autobiography"],"Tragedy = a tragic hero and a sad ending. Comedy = many characters, criticism, a light and often happy ending.");
+q(2,"Themes that are the most important and repeated throughout a whole work are called…",["Major themes","Minor themes","Static themes","Limited themes"],"Major themes run through the whole work. Minor themes appear briefly in some parts.");
+q(2,"A story that stops on a cliffhanger instead of a clear ending has…",["An open ending, so no full resolution","A resolution","A climax","An exposition"],"Not every story offers a resolution. Some have an open ending or a cliffhanger.");
+q(4,"“This soldier is a true lion.” What is the shared quality?",["Courage","Speed","Color","Size"],"A metaphor compares two unlike things through a shared quality. Soldier and lion share courage.");
+q(4,"“A silent scream” is an…",["Oxymoron","Simile","Understatement","Synecdoche"],"Silent and scream contradict each other; together they suggest silent suffering.");
+q(4,"“Teaching young brains.” Brains stands for…",["Students, stressing intelligence","Only the head","Doctors","Nothing; it is literal"],"Synecdoche: a part (brains) represents the whole (students).");
+q(4,"“I’m dying of thirst.” This is…",["Hyperbole","Understatement","Metaphor","Personification"],"Dying is not literal. It is an exaggeration that stresses how thirsty someone is.");
+q(1,"According to the handout, nonfiction writing is…",["Factual and meant to inform, educate or demonstrate","Invented and based on imagination only","Always written in verse","Written to be performed on stage"],"Nonfiction is factual and non-imaginary, for example political essays and biographies. Fiction is invented.");
+q(2,"Which of these is an example of external conflict from the handout?",["Facing an enemy or a struggle to survive","Feeling guilt","Feeling fear or doubt about a decision","Changing your mind"],"External conflict comes from outside: an enemy, survival, difficult life conditions. Guilt, fear and doubt are internal.");
 </script>
 
 <script>
@@ -805,10 +866,10 @@ q(4,"Why does “a million times” in “I’ve told you a million times!” no
   }
 
   function finish(){
-    var n=S.pool.length,pct=Math.round(S.score/n*100);
-    var msg=pct>=85?'Exam ready on this set. Try the mixed quiz again to be sure.':
-            pct>=65?'Close. Read the explanations below, then retry the ones you missed.':
-            'Go back to the Learn tab for the lessons below, then retry.';
+    var n=S.pool.length,pct=Math.round(S.score/n*100);if(window.saveBest){window.saveBest(pct,n);}
+    var msg=pct>=85?'Strong result on this set. Run the mixed quiz once more to be sure.':
+            pct>=65?'Almost there. Read the reasons below, then retry the ones you missed.':
+            'Keep going. Re-read the lessons below, then retry.';
     var h='<div class="eyebrow">Result</div><div class="score">'+S.score+' / '+n+'</div>';
     h+='<p class="lead" style="margin-top:6px">'+pct+'%. '+msg+'</p>';
     h+='<div class="row" style="margin:14px 0">';
@@ -837,4 +898,38 @@ q(4,"Why does “a million times” in “I’ve told you a million times!” no
 })();
 </script>
 
+<script>
+(function(){
+  function g(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+  function p(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+  var root=document.documentElement,tb=document.getElementById('themeBtn');
+  var th=g('lit-theme');if(th){root.setAttribute('data-theme',th);}
+  tb.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':window.matchMedia('(prefers-color-scheme:dark)').matches;
+    var n=dark?'light':'dark';root.setAttribute('data-theme',n);p('lit-theme',n);
+  });
+  var done={};try{done=JSON.parse(g('lit-read')||'{}');}catch(e){}
+  function refresh(){
+    var n=0;
+    [1,2,3,4].forEach(function(l){
+      var on=!!done[l];if(on){n++;}
+      var seg=document.querySelector('#lessonSeg [data-l="'+l+'"]');if(seg){seg.classList.toggle('done',on);}
+      var b=document.querySelector('.readbtn[data-l="'+l+'"]');
+      if(b){b.textContent=on?'Lesson read (tap to undo)':'Mark lesson '+l+' as read';b.className='btn readbtn'+(on?' ghost':'');}
+    });
+    document.getElementById('stRead').textContent=n+'/4';
+    var best=g('lit-best');document.getElementById('stBest').textContent=best?best+'%':'–';
+  }
+  var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.06,rootMargin:'0px 0px -5% 0px'}):null;
+  Array.prototype.forEach.call(document.querySelectorAll('.card,details.qa,details.plan'),function(el){el.classList.add('rise');if(io){io.observe(el);}else{el.classList.add('in');}});
+  Array.prototype.forEach.call(document.querySelectorAll('.pane'),function(pane){
+    var l=pane.getAttribute('data-pane'),b=document.createElement('button');
+    b.type='button';b.setAttribute('data-l',l);b.className='btn readbtn';
+    b.addEventListener('click',function(){done[l]=!done[l];p('lit-read',JSON.stringify(done));refresh();});
+    pane.appendChild(b);
+  });
+  window.saveBest=function(pct,n){if(n>=15){var b=parseInt(g('lit-best')||'0',10);if(pct>b){p('lit-best',String(pct));}refresh();}};
+  refresh();
+})();
+</script>
 </body></html>
