@@ -150,17 +150,17 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
 <header class="hero">
   <div class="meta"><span>Literary Texts · L1 · S1</span><button id="themeBtn" type="button" aria-label="Switch light or dark theme">Theme</button></div>
   <h1><span class="ln"><span>Test</span></span><span class="ln"><span>ready.</span></span></h1>
-  <div class="stage" aria-hidden="true"><div class="ring"><div class="face " style="--i:0"><b>01</b><span>Introduction to literature</span></div><div class="face a" style="--i:1"><b>02</b><span>Elements of fiction</span></div><div class="face w" style="--i:2"><b>03</b><span>The short story</span></div><div class="face " style="--i:3"><b>04</b><span>Figurative language</span></div><div class="face a" style="--i:4"><b>69</b><span>Quiz questions</span></div><div class="face w" style="--i:5"><b>1</b><span>Page cheat sheet</span></div></div></div>
+  <div class="stage" aria-hidden="true"><div class="ring"><div class="face " style="--i:0"><b>01</b><span>Introduction to literature</span></div><div class="face a" style="--i:1"><b>02</b><span>Elements of fiction</span></div><div class="face w" style="--i:2"><b>03</b><span>The short story</span></div><div class="face " style="--i:3"><b>04</b><span>Figurative language</span></div><div class="face a" style="--i:4"><b>115</b><span>Quiz questions</span></div><div class="face w" style="--i:5"><b>1</b><span>Page cheat sheet</span></div></div></div>
   <p class="tag">Lessons, quizzes and model answers in one place.</p>
-  <p class="lead">A complete Semester 1 revision guide for Study of Literary Texts: four lessons with test wording, a cheat sheet, a quiz with explanations, and written practice with model answers.</p>
-  <div class="stats"><span>lessons read <b id="stRead">0/4</b></span><span>best quiz <b id="stBest">–</b></span></div>
+  <p class="lead">A complete Semester 1 revision guide for Study of Literary Texts: four lessons with test wording, a cheat sheet, lesson quizzes plus a final test, all with explanations, and written practice with model answers.</p>
+  <div class="stats"><span>lessons read <b id="stRead">0/4</b></span><span>best final test <b id="stBest">–</b></span></div>
 </header>
 
 <details class="plan" open>
   <summary>Suggested study plan (about 100 minutes)</summary>
   <ol>
     <li><b>Learn</b> (40 min). Read one lesson, then take that lesson’s quiz straight away. Tap “mark as read” at the bottom.</li>
-    <li><b>Quiz</b> (20 min). Run the mixed quiz until you score 85% or more.</li>
+    <li><b>Quiz</b> (20 min). Do the lesson quizzes, then the final test until you score 85% or more.</li>
     <li><b>Write</b> (30 min). Answer each question on paper first, then open the model answer.</li>
     <li><b>Cheat sheet</b> (10 min) in test mode. Then rest: sleep helps memory.</li>
   </ol>
@@ -699,6 +699,8 @@ main:not([hidden]),.pane:not([hidden]){animation:in .5s var(--ease)}
 <script>
 var BANK=[];
 function q(l,t,o,e){BANK.push({l:l,t:t,o:o,e:e});}
+var FINAL=[];
+function qf(l,t,o,e){FINAL.push({l:l,t:t,o:o,e:e,f:1});}
 /* The first option of every question is the correct one. The quiz shuffles them. */
 
 /* Lesson 1 */
@@ -777,6 +779,53 @@ q(4,"“Teaching young brains.” Brains stands for…",["Students, stressing in
 q(4,"“I’m dying of thirst.” This is…",["Hyperbole","Understatement","Metaphor","Personification"],"Dying is not literal. It is an exaggeration that stresses how thirsty someone is.");
 q(1,"According to the handout, nonfiction writing is…",["Factual and meant to inform, educate or demonstrate","Invented and based on imagination only","Always written in verse","Written to be performed on stage"],"Nonfiction is factual and non-imaginary, for example political essays and biographies. Fiction is invented.");
 q(2,"Which of these is an example of external conflict from the handout?",["Facing an enemy or a struggle to survive","Feeling guilt","Feeling fear or doubt about a decision","Changing your mind"],"External conflict comes from outside: an enemy, survival, difficult life conditions. Guilt, fear and doubt are internal.");
+/* Final test: new questions, not used in the lesson quizzes */
+qf(1,"A student says: “I read poetry because it gives me words for what I feel.” Which purpose of literature is this?",["To express feelings", "To criticize society", "To preserve culture", "To educate with facts"],"Putting feelings into words is the purpose “to express feelings”.");
+qf(1,"A comic play makes fun of greedy officials so that the audience sees how unfair they are. Which purpose is it mainly serving?",["To criticize society", "To preserve culture", "To express personal feelings", "To teach grammar"],"Using humor to expose people’s bad behavior is “to criticize society”.");
+qf(1,"Grandparents retell old folk tales so that the community’s traditions are not forgotten. Which purpose is this?",["To preserve culture", "To criticize society", "To develop imagination", "To express anger"],"Keeping traditions alive for the next generation is “to preserve culture”.");
+qf(1,"A writer’s novel shows poor families struggling in an unfair system. Which influence is shaping it most?",["Society (people and social problems)", "Religion (beliefs and values)", "History (events)", "Personal experiences only"],"Social problems and the lives of ordinary people come from the influence of society.");
+qf(1,"Which of these is nonfiction?",["A biography of a real scientist", "A fairy tale about a dragon", "A short story about an invented detective", "A tragedy about an imaginary king"],"Nonfiction is based on real people, facts and events. The other three are invented.");
+qf(1,"Which pair contains one fiction form and one nonfiction form?",["Fairy tale and memoir", "Novel and short story", "Biography and essay", "Novel and fairy tale"],"A fairy tale is fiction and a memoir is nonfiction. In the other pairs both items are in the same group.");
+qf(1,"A play with many characters, social criticism and a light, happy ending is a…",["Comedy", "Tragedy", "Ballad", "Memoir"],"Comedy: many characters, criticism, a playful and often happy ending. Tragedy has a tragic hero and a sad ending.");
+qf(1,"Which feature best identifies verse?",["Lines with a pattern, a rhythm and sometimes rhyme", "Sentences grouped into paragraphs", "Actors performing on a stage", "Only true facts"],"Verse is arranged in lines (not paragraphs) and often has rhythm and rhyme.");
+qf(1,"A writer may base a story on real events yet it is still fiction. Why?",["Fiction is invented; real life can inspire it but it does not have to be true", "Fiction must be completely true", "Fiction cannot use real places", "Real events turn it into nonfiction"],"The handout says a fiction writer can be influenced by real-life events or rely entirely on imagination.");
+qf(2,"Which sentence mainly describes the setting?",["“Rain hammered the empty station at midnight.”", "“Hana wanted to win the contest more than anything.”", "“They argued about who should lead.”", "“I will never forgive you,” he said."],"Setting is time and place: the station at midnight, with weather adding mood.");
+qf(2,"Which sentence clearly states a conflict?",["“Lena must cross the desert before her water runs out.”", "“Lena lived in a small house.”", "“It was a sunny Monday.”", "“Lena’s mother had brown eyes.”"],"A conflict is a problem or struggle that drives the story: Lena against the desert and time.");
+qf(2,"Mira appears in only one scene, carrying a letter. Which statement is correct?",["She is a minor character, and still a character", "She is not a character because her role is small", "She must be the protagonist", "She must be the antagonist"],"Everyone who plays a role in the story, important or trivial, counts as a character.");
+qf(2,"A shy girl is the center of the story and becomes brave by the end. She is a…",["Protagonist and a dynamic character", "Antagonist and a static character", "Minor and static character", "Narrator and nothing else"],"She is the hero (protagonist) and she changes (dynamic).");
+qf(2,"A young inventor tries to save her workshop while a greedy landlord tries to take it. The landlord is the…",["Antagonist", "Protagonist", "Narrator", "Minor theme"],"The antagonist stands against the protagonist and adds to the conflict.");
+qf(2,"Which example is matched with the correct conflict type?",["A man fights rising floodwater: character vs nature", "A man feels guilty about a lie: character vs society", "A woman argues with her rival: internal conflict", "A pilot battles a rival crew: character vs technology"],"Floodwater is a force of nature. Guilt is internal; rivals are character vs character; technology means machines.");
+qf(2,"The whole school watches as Ali finally faces the bully, and the tension reaches its highest point. This is the…",["Climax", "Exposition", "Falling action", "Resolution"],"The climax is the peak of tension and the turning point of the conflict.");
+qf(2,"The story ends with Ali sailing again, now respected by the village. This is the…",["Resolution", "Exposition", "Rising action", "Climax"],"The resolution is the ending, where the story settles.");
+qf(2,"Which pair is NOT correctly matched?",["Exposition – the most exciting point", "Rising action – problems grow", "Climax – the turning point", "Resolution – the ending"],"Exposition is the introduction (characters, setting, background), not the most exciting point.");
+qf(2,"“You walk into the room and notice the window is open.” The narrator uses…",["Second person", "First person", "Third person limited", "Third person omniscient"],"Second person speaks directly to “you”.");
+qf(2,"A narrator uses “she” and reveals only what Sara sees and thinks. This is…",["Third person limited", "Third person omniscient", "First person", "Second person"],"Third person uses he/she/they. Limited means it stays with one character’s view.");
+qf(2,"Why does a first-person narrator limit what the reader knows?",["We only know what that character sees and thinks", "The narrator knows everyone’s thoughts", "The story is told to “you”", "The narrator is never part of the story"],"First person means a character narrates, so we follow only that character’s view.");
+qf(2,"A story keeps returning to honesty and only briefly mentions money worries. Which is correct?",["Honesty is the major theme and money worries a minor theme", "Money worries are the major theme", "Both are major themes", "Neither is a theme"],"Major themes run through the work. Minor themes appear briefly in some parts.");
+qf(2,"Which sentence is stated as a message (a theme) rather than a plot event?",["Courage can win over fear.", "The girl lost her bag.", "The wolf entered the village.", "The class went on a trip."],"A theme is the main idea or message. The others only tell what happens.");
+qf(3,"A story has three characters, one central conflict and ends with a surprise. It is most likely a…",["Short story", "Novel", "Autobiography", "Tragedy (a play)"],"Few characters, one conflict and a focused plot are typical of a short story.");
+qf(3,"A story follows a bus driver’s ordinary Tuesday, with no magic and no crime. It is most likely…",["Realistic", "Fantastic", "Detective", "Satirical"],"Realistic stories are about everyday life that could really happen.");
+qf(3,"A neighbor tries to find out who stole the village clock by studying clues. This is a…",["Detective story", "Fantastic story", "Realistic story with no mystery", "Satirical story"],"A detective story is about mystery and crime.");
+qf(3,"Which sequence follows the correct plot order?",["Ali moves to a new school → he is teased more each week → he faces the bully in front of everyone → the bully backs down → Ali makes friends", "He is teased → he moves to a new school → he makes friends → he faces the bully → the bully backs down", "He faces the bully → he moves to a new school → he is teased → the bully backs down → he makes friends", "He makes friends → he moves to a new school → he is teased → he faces the bully → the bully backs down"],"Exposition, rising action, climax, falling action, resolution.");
+qf(3,"“I never thought I could forgive him, but when he cried at the gate, something inside me softened.” Which pair is correct?",["First person; internal conflict", "Third person omniscient; internal conflict", "First person; character vs nature", "Second person; external conflict"],"“I” means first person, and the struggle is inside the narrator.");
+qf(3,"Why are the six elements useful when reading a short story?",["They give a checklist for analyzing any story", "They replace reading the story", "They only apply to novels", "They are the five plot stages"],"The same six elements work together in a short story: characters, setting, conflict, plot, point of view, theme.");
+qf(3,"Because it is brief, a short story is usually focused on…",["One theme", "Many equal themes", "No theme at all", "Only the setting"],"One of its characteristics is a focus on one theme.");
+qf(4,"“The old clock coughed twice and then died.” Which figure of speech is this?",["Personification", "Simile", "Hyperbole", "Oxymoron"],"A clock is given human actions (coughing, dying).");
+qf(4,"“Her words were knives.” Which figure of speech is this?",["Metaphor", "Simile", "Understatement", "Synecdoche"],"A direct comparison with no “like” or “as”.");
+qf(4,"Which word in “He was as stubborn as a mule” shows it is a simile?",["“as … as”", "“mule”", "“stubborn”", "“He”"],"Similes use “like” or “as” to compare.");
+qf(4,"“I could sleep for a century.” This is…",["Hyperbole", "Understatement", "Metaphor", "Personification"],"An extreme exaggeration for emphasis, not a real number.");
+qf(4,"Standing in a flooded house, he says: “Bit of a damp day, isn’t it?” This is…",["Understatement", "Hyperbole", "Simile", "Oxymoron"],"He makes a serious problem sound small.");
+qf(4,"“A living death” is an oxymoron because…",["It joins two contradictory terms", "It compares using “like” or “as”", "It exaggerates for emphasis", "It gives human qualities to an object"],"Living and death contradict each other, and together create a new meaning.");
+qf(4,"“The team needs fresh legs in the second half.” Legs stand for…",["Players, stressing their energy", "Football boots", "Doctors", "The stadium"],"Synecdoche: a part (legs) represents the whole (players).");
+qf(4,"Which sentence contains personification?",["“The moon smiled over the silent fields.”", "“The moon was like a coin.”", "“The moon is a lamp.”", "“The moon was a million miles away.”"],"The moon is given a human action (smiling).");
+qf(4,"Which pair is matched correctly?",["“Her voice was honey.” – metaphor", "“Her voice was like honey.” – metaphor", "“The sea danced.” – simile", "“A thousand worries crushed him.” – understatement"],"No “like” or “as” means metaphor. With “like” it is a simile. “The sea danced” is personification, and “a thousand worries” is hyperbole.");
+qf(4,"Why would a writer choose hyperbole instead of a plain statement?",["To emphasize a feeling or idea by exaggerating", "To hide the meaning", "To compare using “like”", "To make the situation seem less important"],"Hyperbole deliberately exaggerates for emphasis (or a comic effect).");
+qf(4,"“He is a walking encyclopedia.” Which quality is the metaphor stressing?",["Knowledge", "Weight", "Age", "Paper"],"Metaphor compares two unlike things through a shared quality: here, knowledge.");
+qf(4,"Which sentence is literal, not figurative?",["“The soup is too hot to eat.”", "“The soup is lava.”", "“The soup waved hello.”", "“The soup was a million degrees.”"],"Literal language means exactly what it says. The others are figures of speech.");
+qf(4,"Which question helps you spot a hyperbole?",["Is it an extreme exaggeration, not meant literally?", "Does it use “like” or “as”?", "Is a part standing for the whole?", "Does it join two opposite words?"],"Quick tip from the lesson: ask whether it is a comparison or an exaggeration.");
+qf(4,"“I wasn’t going to cry. The moon was a silver coin, and I told myself it was only a little goodbye.” Which two figures appear?",["Metaphor and understatement", "Simile and hyperbole", "Personification and oxymoron", "Synecdoche and simile"],"“The moon was a silver coin” is a metaphor. “Only a little goodbye” downplays a sad moment (understatement).");
+qf(2,"“In 1950, in a mining village, Tom secretly studies at night. His father wants him underground. When Tom finally speaks at the village meeting, everyone gasps.” Which analysis is correct?",["Setting: a mining village in 1950; conflict: character vs character; third person", "Setting: Tom’s mind; internal conflict; first person", "Setting: a school today; character vs nature; second person", "Setting: the future; conflict: character vs technology; first person"],"Time and place give the setting, Tom against his father is character vs character, and “Tom” and “his” show third person.");
+qf(2,"Which is the best match between a story element and its key question?",["Point of view – Who tells the story?", "Setting – What is the message?", "Theme – When and where?", "Conflict – Who?"],"Characters: Who? Setting: When and where? Conflict: What is the problem? Plot: What happens? Point of view: Who tells the story? Theme: What is the message?");
 </script>
 
 <script>
@@ -850,22 +899,22 @@ q(2,"Which of these is an example of external conflict from the handout?",["Faci
 
   function menu(){
     S=null;
-    var h='<h2>Quiz</h2><p class="lead">'+BANK.length+' questions. Answers appear right after each tap, with the reason. Aim for 85% or more on the mixed quiz.</p>';
+    var h='<h2>Quiz</h2><p class="lead">Answers appear right after each tap, with the reason.</p>';
     h+='<div class="stack" style="margin-top:14px">';
-    h+='<button class="btn" data-go="quick">Mixed quiz: 15 random questions</button>';
-    h+='<div class="grid" style="margin:0">';
+    h+='<div class="card"><div class="eyebrow">Final test</div><h3 style="margin-top:6px">'+FINAL.length+' new questions</h3><p class="lead">None of these appear in the lesson quizzes. They mix all four lessons and use short passages and scenarios. Aim for 85% or more.</p>';
+    h+='<div class="stack"><button class="btn" data-go="quick">Final test: 15 random questions</button>';
+    h+='<button class="btn ghost" data-go="all">All '+FINAL.length+' final questions</button></div></div>';
+    h+='<div class="card"><div class="eyebrow">Lesson quizzes</div><h3 style="margin-top:6px">Practice one lesson at a time</h3><div class="grid" style="margin:0">';
     for(var l=1;l<=4;l++){h+='<button class="btn ghost" data-go="'+l+'">Lesson '+l+' ('+count(l)+')</button>';}
-    h+='</div>';
-    h+='<button class="btn ghost" data-go="all">Everything: all '+BANK.length+' questions</button>';
-    h+='</div>';
+    h+='</div></div></div>';
     box.innerHTML=h;
   }
 
   function start(kind,custom){
     var pool;
     if(custom){pool=sh(custom);}
-    else if(kind==='quick'){pool=sh(BANK).slice(0,15);}
-    else if(kind==='all'){pool=sh(BANK);}
+    else if(kind==='quick'){pool=sh(FINAL).slice(0,15);}
+    else if(kind==='all'){pool=sh(FINAL);}
     else{pool=sh(BANK.filter(function(x){return x.l===parseInt(kind,10);}));}
     S={kind:kind,pool:pool,i:0,score:0,missed:[],locked:false};
     render();
@@ -877,7 +926,7 @@ q(2,"Which of these is an example of external conflict from the handout?",["Faci
     S.opts=sh(Q.o.map(function(t,k){return {t:t,ok:k===0};}));
     S.locked=false;
     var pct=Math.round(S.i/S.pool.length*100);
-    var h='<div class="eyebrow">Lesson '+Q.l+' · Question '+(S.i+1)+' of '+S.pool.length+'</div>';
+    var h='<div class="eyebrow">'+(Q.f?'Final test':'Lesson '+Q.l)+' · Question '+(S.i+1)+' of '+S.pool.length+'</div>';
     h+='<div class="bar" aria-hidden="true"><i style="width:'+pct+'%"></i></div>';
     h+='<h3 style="margin-bottom:14px">'+Q.t+'</h3>';
     S.opts.forEach(function(o,k){h+='<button class="opt" data-pick="'+k+'">'+o.t+'</button>';});
@@ -903,8 +952,8 @@ q(2,"Which of these is an example of external conflict from the handout?",["Faci
   }
 
   function finish(){
-    var n=S.pool.length,pct=Math.round(S.score/n*100);if(window.saveBest){window.saveBest(pct,n);}
-    var msg=pct>=85?'Strong result on this set. Run the mixed quiz once more to be sure.':
+    var n=S.pool.length,pct=Math.round(S.score/n*100);if(window.saveBest&&(S.kind==='quick'||S.kind==='all')){window.saveBest(pct,n);}
+    var msg=pct>=85?'Strong result on this set. Try the other quizzes to be sure.':
             pct>=65?'Almost there. Read the reasons below, then retry the ones you missed.':
             'Keep going. Re-read the lessons below, then retry.';
     var h='<div class="eyebrow">Result</div><div class="score">'+S.score+' / '+n+'</div>';
@@ -915,7 +964,7 @@ q(2,"Which of these is an example of external conflict from the handout?",["Faci
     if(S.missed.length){
       h+='<div class="card"><h3>What you missed</h3>';
       S.missed.forEach(function(Q){
-        h+='<div class="miss"><small>Lesson '+Q.l+'</small><div><b>'+Q.t+'</b></div><div>Answer: '+Q.o[0]+'</div><small>'+Q.e+'</small></div>';
+        h+='<div class="miss"><small>'+(Q.f?'Final test':'Lesson '+Q.l)+'</small><div><b>'+Q.t+'</b></div><div>Answer: '+Q.o[0]+'</div><small>'+Q.e+'</small></div>';
       });
       h+='</div>';
     }
@@ -968,7 +1017,7 @@ q(2,"Which of these is an example of external conflict from the handout?",["Faci
     b.addEventListener('click',function(){done[l]=!done[l];p('lit-read',JSON.stringify(done));refresh();});
     pane.appendChild(b);
   });
-  window.saveBest=function(pct,n){if(n>=15){var b=parseInt(g('lit-best')||'0',10);if(pct>b){p('lit-best',String(pct));}refresh();}};
+  window.saveBest=function(pct,n){if(n>=1){var b=parseInt(g('lit-best')||'0',10);if(pct>b){p('lit-best',String(pct));}refresh();}};
   refresh();
 })();
 </script>
